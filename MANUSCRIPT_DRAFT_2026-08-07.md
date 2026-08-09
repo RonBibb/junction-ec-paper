@@ -9,7 +9,7 @@ ORCID: 0009-0004-1153-2464
 
 ## Abstract
 
-We prove a strict surface-energy obstruction for timelike spherical junctions between a homogeneous Kantowski–Sachs (KS) region and the ordinary asymptotically flat Schwarzschild exterior. Because the KS areal radius has no longitudinal spatial gradient, \(2m_{{\rm MS},C}/B\ge1\) throughout the region. For every matched radius with \(F(R)>0\) and every compatible finite-rapidity embedding, the angular Israel equation requires \(\sigma<0\) for either explicitly retained KS interval. Weak and dominant energy conditions fail independently of surface pressure, without a critical radius or cosmological-constant scale. Null-energy-condition violation remains trajectory dependent. For an exact static comoving junction family, it occurs precisely outside the Schwarzschild photon sphere, \(R_0>3m\); a Nariai \(dS_2\times S^2\) geometric witness exists with \(\Lambda=R_0^{-2}\), a scale specific to that auxiliary family. The result is a strict KS specialization of established spherical-shell theory. Any thin-wall model satisfying these geometric, causal, and global hypotheses requires negative surface density. The theorem does not apply inside the horizon or to spacelike, finite-thickness, or wormhole-connected transitions.
+We prove a strict surface-energy obstruction for timelike spherical junctions between a homogeneous Kantowski–Sachs (KS) region and the ordinary asymptotically flat Schwarzschild exterior. Because the KS areal radius has no longitudinal spatial gradient, \(2m_{{\rm MS},C}/B\ge1\) throughout the region. For every matched radius with \(F(R)>0\) and every compatible finite-rapidity embedding, the angular Israel equation requires \(\sigma<0\) for either explicitly retained KS interval. Weak and dominant energy conditions fail independently of surface pressure, without a critical radius or cosmological-constant scale. Null-energy-condition violation remains trajectory dependent. For an exact static comoving junction family, it occurs precisely outside the Schwarzschild photon sphere, \(R_0>3m\), and an explicit Nariai product region supplies a local geometric witness. Thus a thin-wall construction attaching a homogeneous KS region directly to the retained ordinary Schwarzschild exterior outside the horizon requires negative surface density. The theorem does not apply inside the horizon or to spacelike, finite-thickness, or wormhole-connected transitions.
 
 ## 1. Introduction
 
@@ -132,10 +132,16 @@ Figure 1 summarizes the declared geometry, retained regions, and normal orientat
 
 ## 3. Common-normal and retained-side lemma
 
-**Lemma 1.** Let \(n=d\eta\) be directed from the retained KS region to the retained Schwarzschild region. If the parent contains spatial infinity, then
+**Lemma 1.** Let \(n=d\eta\) be directed from the retained KS region to the retained Schwarzschild region. If the Schwarzschild side contains spatial infinity, then \(\epsilon_P=+1\). On the KS side, retaining \(\chi\le\chi_\Sigma\) gives \(\epsilon_C=+1\), while retaining \(\chi\ge\chi_\Sigma\) gives \(\epsilon_C=-1\). Thus
 
 \[
-\epsilon_P=+1.
+\epsilon_P=+1,
+\qquad
+\epsilon_C=
+\begin{cases}
++1,&\chi\le\chi_\Sigma\ \text{retained},\\
+-1,&\chi\ge\chi_\Sigma\ \text{retained}.
+\end{cases}
 \tag{9}
 \]
 
@@ -512,7 +518,7 @@ Consequently,
 
 Within the theorem domain, the shell NEC is therefore violated for \(R_0>3m\), saturated at \(R_0=3m\), and satisfied for \(2m<R_0<3m\).
 
-Equivalently, \(-1<w_s<-1/2\) in the NEC-violating interval, \(w_s=-1\) at the threshold, and \(w_s<-1\) below it. These ratios classify the surface tensor algebraically; because \(\sigma_0<0\), they should not be read as ordinary positive-density fluid equations of state. The second relation in Eq. (41c) shows that the second \(2+1\)-dimensional SEC inequality is satisfied throughout the family, so its SEC disposition is controlled entirely by the NEC. This proves the proposition. \(\square\)
+Equivalently, \(-1<w_s<-1/2\) in the NEC-violating interval, \(w_s=-1\) at the threshold, and \(w_s<-1\) below it. These ratios classify the surface tensor algebraically; because \(\sigma_0<0\), they should not be read as ordinary positive-density fluid equations of state. For the intrinsic \(2+1\)-dimensional shell, the SEC requires NEC together with \(p_s\ge0\) [20]. Equation (41b) shows \(p_{s0}>0\) throughout \(R_0>2m\), so the static family's SEC disposition is controlled entirely by the NEC. This proves the proposition. \(\square\)
 
 The threshold \(R_0=3m\) is the Schwarzschild photon-sphere radius, so the required surface tensor violates NEC precisely outside the photon sphere within this static junction family. Define the dimensionless stresses
 
@@ -554,7 +560,11 @@ At the level of thin-wall architecture, this realization parallels the false-vac
 
 More generally, Eqs. (41a)–(41c) give the required surface stress whenever the declared geometry contains an exact static comoving segment, without assuming this particular isotropic realization. They identify a nonempty, orientation-independent sector in which negative surface density is accompanied by \(\sigma+p_s<0\).
 
-For the isotropic \(2+1\)-dimensional shell, WEC requires \(\sigma\ge0\) and \(\sigma+p_s\ge0\), while DEC requires \(\sigma\ge|p_s|\). Theorem 1 therefore proves failure of both WEC and DEC, regardless of \(p_s\). NEC requires \(\mathcal N\ge0\). The shell SEC requires both \(\mathcal N\ge0\) and \(\Delta K_\tau\ge0\). Thus NEC and SEC remain trajectory-dependent in general, while Eq. (41a) gives an explicit NEC-violating subfamily.
+For the isotropic \(2+1\)-dimensional shell, WEC requires \(\sigma\ge0\) and \(\sigma+p_s\ge0\), while DEC requires \(\sigma\ge|p_s|\). Theorem 1 therefore proves failure of both WEC and DEC, regardless of \(p_s\). We use the intrinsic three-dimensional SEC,
+\[
+\left(\Sigma_{ab}-\Sigma h_{ab}\right)v^av^b\ge0
+\]
+for every timelike tangent vector \(v^a\), which for the type-I tensor (6) is equivalent to NEC together with \(p_s\ge0\) [20, Proposition 3]. In curvature variables these are \(\mathcal N\ge0\) and \(\Delta K_\tau+\Delta K_\theta\ge0\). Thus NEC and SEC remain trajectory-dependent in general, while Eq. (41a) gives an explicit NEC-violating subfamily.
 
 **Table 3. Surface energy-condition disposition on the ordinary exterior branch.**
 
@@ -563,7 +573,7 @@ For the isotropic \(2+1\)-dimensional shell, WEC requires \(\sigma\ge0\) and \(\
 | NEC | \(\sigma+p_s\ge0\) | Trajectory-dependent; violated by the static comoving family for \(R_0>3m\) |
 | WEC | \(\sigma\ge0\) and NEC | Violated because \(\sigma<0\) |
 | DEC | \(\sigma\ge|p_s|\) | Violated because \(\sigma<0\) |
-| SEC in \(2+1\) | NEC and \(\sigma+2p_s\ge0\) | Trajectory-dependent; for the static comoving family it fails exactly when \(R_0>3m\) |
+| SEC in \(2+1\) | NEC and \(p_s\ge0\) | Trajectory-dependent; for the static comoving family it fails exactly when \(R_0>3m\) |
 
 ## 7. Surface conservation
 
@@ -632,10 +642,9 @@ Their sum gives
 \[
 \frac{dH_B}{dt_C}-H_AH_B+H_B^2
 =-\frac{\kappa}{2}(\rho+p).
-\tag{45a}
 \]
 
-Using Eqs. (17)–(19), differentiating the Israel tensor and applying Eq. (45a) reproduces Eq. (46) with \(p_\chi=p\), providing an independent closure check. The right-hand side is the kinematic flux measured when a moving shell crosses comoving child matter. It is not a parent-to-child deposition law. In the comoving limit, \(X=0\) and the flux vanishes.
+Using Eqs. (17)–(19), differentiating the Israel tensor and applying this identity reproduces Eq. (46) with \(p_\chi=p\), providing an independent closure check. The right-hand side is the kinematic flux measured when a moving shell crosses comoving child matter. It is not a parent-to-child deposition law. In the comoving limit, \(X=0\) and the flux vanishes.
 
 ## 8. Turning point and regular-chart controls
 
@@ -703,7 +712,7 @@ which is finite. The surface tensor also remains finite for finite acceleration.
 
 The affirmative KS result is geometric and region-wide. Because the Kantowski–Sachs product geometry has areal radius \(B(t_C)\) with no longitudinal spatial gradient, Eq. (31) shows that \(2m_{{\rm MS},C}/B\ge1\) identically throughout the region, with equality only where \(dB/dt_C=0\). The shell relation \(R=B\) is imposed only when evaluating a matched event. The obstruction therefore applies at every matched radius in the ordinary \(F>0\) exterior, with no critical radius or cosmological-constant scale.
 
-BKT [2] supply the general invariant angular-curvature formula and its surface-energy junction equation for arbitrary spherical shells; consequently neither the signed-root mechanism nor its availability for dynamical spherical interiors is claimed as new here. Rosa and Carloni [6] supply the encompassing covariant LRS framework. Two closer KS comparisons delimit the specialization. Sharif and Abbas [18] derive the surface stresses of a KS--Minkowski shell, rather than the strict sign for an ordinary Schwarzschild exterior. Uzan, Ellis, and Larena [19] obtain an exact KS construction by matching to Kottler regions on a cosmological horizon; their boundary is not the \(F>0\) timelike shell of Theorem 1. The result proved here is the explicit comoving/moving KS specialization and the strict sign inequality (25) for the ordinary retained Schwarzschild exterior. The FRW comparison identifies the product-geometric premise, while the common-normal, conservation, turning-point, and regular-chart calculations close the physical statement. We have not found a prior publication stating the same KS/ordinary-exterior theorem. The distinct Schwarzschild thin-shell-wormhole result [13] already contains the static \(3m\) NEC threshold; Proposition 2 therefore claims the KS/Nariai surface tensor and its interpretation, not novelty for that radius alone.
+BKT [2] supply the general invariant angular-curvature formula and its surface-energy junction equation for arbitrary spherical shells; consequently neither the signed-root mechanism nor its availability for dynamical spherical interiors is claimed as new here. Rosa and Carloni [6] supply the encompassing covariant LRS framework. Two closer KS comparisons delimit the specialization. Sharif and Abbas [18] derive the surface stresses of a KS--Minkowski shell, rather than the strict sign for an ordinary Schwarzschild exterior. Uzan, Ellis, and Larena [19] obtain an exact KS construction by matching to Kottler regions on a cosmological horizon; their boundary is not the \(F>0\) timelike shell of Theorem 1. The result proved here is the explicit comoving/moving KS specialization and the strict sign inequality (25) for the ordinary retained Schwarzschild exterior. The FRW comparison identifies the product-geometric premise, while the common-normal, conservation, turning-point, and regular-chart calculations close the physical statement. We have not identified a prior publication stating either this KS/ordinary-exterior theorem or the corresponding sufficient condition explicitly in trapped/untrapped or Misner--Sharp language. The distinct Schwarzschild thin-shell-wormhole result [13] already contains the static \(3m\) NEC threshold; Proposition 2 therefore claims the KS/Nariai surface tensor and its interpretation, not novelty for that radius alone.
 
 The \(F>0\) restriction is the invariant untrapped-parent condition, not an arbitrary cutoff. For \(F<0\), the standard Schwarzschild black-hole time orientation is future trapped and the time-reversed white-hole orientation is past trapped. The strict comparison between the KS non-untrapped sector and the untrapped Schwarzschild exterior used in Eqs. (24) and (33) therefore lifts in the complementary problem. The spacelike layers used by Frolov, Markov, and Mukhanov [8,9] pose a different junction problem inside that regime. The theorem does not obstruct their chosen architecture; it explains why the corresponding ordinary-exterior timelike alternative needs exotic support.
 
@@ -747,7 +756,7 @@ Software used in this work includes Python, SymPy, SciPy, ReportLab, PGFPlots, a
 
 ## Data and code availability
 
-No observational or experimental datasets were generated or analyzed in this study. The manuscript source, figure-generation scripts, symbolic and numerical verification suite, and exact pinned provenance modules are publicly available at https://github.com/RonBibb/junction-ec-paper. A versioned archival release with a permanent DOI will be cited in the submission version.
+No observational or experimental datasets were generated or analyzed in this study. The manuscript source, figure-generation scripts, symbolic and numerical verification suite, and exact pinned provenance modules are publicly available at https://github.com/RonBibb/junction-ec-paper.
 
 ## Appendix A. Orthonormal-frame check
 
@@ -848,3 +857,5 @@ These are Eq. (37). Substitution into all three mixed equations gives zero resid
 [18] M. Sharif and G. Abbas, “Gravitational collapse: Expanding and collapsing regions,” Gen. Relativ. Gravit. 43, 1179–1188 (2011), doi:10.1007/s10714-010-0952-1, arXiv:1008.2805.
 
 [19] J.-P. Uzan, G. F. R. Ellis, and J. Larena, “A two-mass expanding exact space-time solution,” Gen. Relativ. Gravit. 43, 191–205 (2011), doi:10.1007/s10714-010-1081-6, arXiv:1005.1809.
+
+[20] H. Maeda and C. Martínez, “Energy conditions in arbitrary dimensions,” Prog. Theor. Exp. Phys. 2020, 043E02 (2020), doi:10.1093/ptep/ptaa009, arXiv:1810.02487.

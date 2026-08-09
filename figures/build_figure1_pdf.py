@@ -60,23 +60,15 @@ def panel(ax, y0, case, retained, eps_c, chi_points_left):
 
 
 def main():
-    fig, ax = plt.subplots(figsize=(12, 7.6))
+    fig, ax = plt.subplots(figsize=(12, 6.8))
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
     ax.text(0.5, 0.965, "One common normal and the two retained Kantowski–Sachs intervals",
             ha="center", va="center", fontsize=17, fontweight="bold")
 
-    panel(ax, 0.55, "Case A", r"retain $\chi\leq\chi_\Sigma$", +1, False)
-    panel(ax, 0.18, "Case B", r"retain $\chi\geq\chi_\Sigma$", -1, True)
-
-    ax.plot([0.04, 0.96], [0.135, 0.135], color="black", linewidth=0.8)
-    ax.text(0.04, 0.095,
-            "The arrows are the two one-sided limits of one normal, not normals independently directed into both retained regions.",
-            ha="left", va="center", fontsize=10)
-    ax.text(0.04, 0.055,
-            "The negative parent branch retains a different Schwarzschild side; it is not a convention change for this gluing.",
-            ha="left", va="center", fontsize=10)
+    panel(ax, 0.54, "Case A", r"retain $\chi\leq\chi_\Sigma$", +1, False)
+    panel(ax, 0.16, "Case B", r"retain $\chi\geq\chi_\Sigma$", -1, True)
 
     fig.savefig(HERE / "figure1_junction_orientation.pdf", bbox_inches="tight")
     fig.savefig(HERE / "figure1_junction_orientation.svg", bbox_inches="tight")

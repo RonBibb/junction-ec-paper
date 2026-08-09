@@ -141,7 +141,7 @@ def convert(lines):
             pending_table_caption = ""
             continue
         if line.startswith("## References"):
-            body += [r"\section*{References}", r"\begin{enumerate}[label={[\arabic*]},leftmargin=*]"]
+            body += [r"\section*{References}", r"\small", r"\begin{enumerate}[label={[\arabic*]},leftmargin=*,itemsep=0.15em]"]
             in_refs = True
             i += 1
             continue
@@ -191,7 +191,7 @@ def convert(lines):
             i += 1
         body.append(text_escape(" ".join(para)) + "\n")
     if in_refs:
-        body.append(r"\end{enumerate}")
+        body += [r"\end{enumerate}", r"\normalsize"]
     author = author_lines[0] if author_lines else "Ron Bibb"
     author_details = r"\\\small ".join(text_escape(line) for line in author_lines[1:])
     preamble = rf"""\documentclass[11pt]{{article}}
@@ -219,7 +219,7 @@ def convert(lines):
 \titlespacing*{{\section}}{{0pt}}{{2.2ex plus .8ex minus .2ex}}{{1.1ex}}
 \title{{{text_escape(title)}}}
 \author{{{text_escape(author)}\\\small {author_details}}}
-\date{{8 August 2026}}
+\date{{9 August 2026}}
 \begin{{document}}
 \maketitle
 \begin{{abstract}}
