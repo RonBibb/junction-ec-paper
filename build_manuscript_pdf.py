@@ -11,7 +11,7 @@ SOURCE = ROOT / "MANUSCRIPT_DRAFT_2026-08-07.md"
 TMP = ROOT / "tmp" / "pdfs"
 OUT = ROOT / "output" / "pdf"
 TEX = TMP / "ks_schwarzschild_manuscript.tex"
-PDF = OUT / "KS_SCHWARZSCHILD_MANUSCRIPT_MAJOR_REVISION_2026-08-09.pdf"
+PDF = OUT / "KS_SCHWARZSCHILD_SIGN_CLASSIFICATION_2026-08-09.pdf"
 
 
 def text_escape(value: str) -> str:

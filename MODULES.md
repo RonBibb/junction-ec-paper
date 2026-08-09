@@ -6,7 +6,7 @@ paper repository.
 
 | Module | Role in this paper |
 |---|---|
-| `modules/junction-ec-paper-audit` | Executable symbolic derivations, numerical reproductions, claim matrix, and 28 unit tests. |
+| `modules/junction-ec-paper-audit` | Executable symbolic derivations, numerical reproductions, claim matrix, and 34 unit tests. |
 | `modules/Arbiter` | Shared TEST 001–008 specifications and accepted reviews used by the audit provenance manifest. |
 | `modules/parent-child-phase0` | Phase-zero equation-closure provenance. |
 | `modules/parent-child-j0` | Kantowski–Sachs/Schwarzschild junction provenance. |
@@ -33,6 +33,5 @@ An existing compatible interpreter can be supplied without creating a module-loc
 JUNCTION_AUDIT_PYTHON=/path/to/python modules/junction-ec-paper-audit/verify.sh
 ```
 
-The verified 2026-08-09 linked-layout result is `JEC-A`, with JEC0–JEC8 passing and all 28 unit
+The verified 2026-08-09 linked-layout result is `JEC-A`, with JEC0–JEC8 passing and all 34 unit
 tests passing.
-
