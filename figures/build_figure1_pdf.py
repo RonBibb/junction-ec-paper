@@ -1,85 +1,88 @@
 #!/usr/bin/env python3
-"""Build the junction-orientation schematic as a native vector PDF."""
+"""Build the common-normal junction schematic as matching PDF and SVG files."""
 
 from pathlib import Path
-from reportlab.pdfgen import canvas
-from reportlab.lib.colors import black, Color, white
+
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyArrowPatch, Rectangle
 
 
-OUT = Path(__file__).with_name("figure1_junction_orientation.pdf")
-W, H = 1200, 690
+HERE = Path(__file__).resolve().parent
 
 
-def arrow(c, x1, y1, x2, y2, open_head=False):
-    c.saveState()
-    c.setStrokeColor(black); c.setFillColor(black)
-    c.setLineWidth(2.5)
-    c.line(x1, y1, x2, y2)
-    head = [(x2, y2), (x2 - 15, y2 + 8), (x2 - 15, y2 - 8)]
-    p = c.beginPath()
-    p.moveTo(*head[0]); p.lineTo(*head[1]); p.lineTo(*head[2])
-    if open_head:
-        c.setFillColor(white); c.setStrokeColor(black)
-        p.close(); c.drawPath(p, stroke=1, fill=1)
-    else:
-        p.close(); c.drawPath(p, stroke=1, fill=1)
-    c.restoreState()
+def arrow(ax, start, end, *, filled=True):
+    ax.add_patch(
+        FancyArrowPatch(
+            start,
+            end,
+            arrowstyle="-|>" if filled else "->",
+            mutation_scale=16,
+            linewidth=1.6,
+            color="black",
+        )
+    )
 
 
-def centered(c, text, x, y, size=20, bold=False):
-    c.setFont("Times-Bold" if bold else "Times-Roman", size)
-    c.drawCentredString(x, y, text)
+def panel(ax, y0, case, retained, eps_c, chi_points_left):
+    shell_x = 0.41
+    height = 0.31
+    ax.add_patch(Rectangle((0.04, y0), shell_x - 0.04, height,
+                           facecolor="0.96", edgecolor="black", hatch="///", linewidth=1.0))
+    ax.add_patch(Rectangle((shell_x, y0), 0.55, height,
+                           facecolor="0.985", edgecolor="black", hatch="..", linewidth=1.0))
+    ax.plot([shell_x, shell_x], [y0, y0 + height], color="black", linewidth=4.0)
+
+    ax.text(0.225, y0 + height - 0.045, case, ha="center", va="center",
+            fontsize=12, fontweight="bold")
+    ax.text(0.225, y0 + height - 0.090, retained, ha="center", va="center", fontsize=10)
+    ax.text(0.685, y0 + height - 0.045, "retained Schwarzschild exterior",
+            ha="center", va="center", fontsize=12, fontweight="bold")
+    ax.text(0.685, y0 + height - 0.090, "contains spatial infinity",
+            ha="center", va="center", fontsize=10)
+    ax.text(shell_x + 0.012, y0 + 0.055, r"shell $\Sigma$",
+            ha="left", va="center", fontsize=9.5, fontweight="bold", rotation=90)
+
+    arrow(ax, (shell_x - 0.07, y0 + 0.155), (shell_x + 0.20, y0 + 0.155))
+    ax.text(shell_x + 0.065, y0 + 0.188,
+            r"one common $n=d\eta$, directed $M_C\to M_P$",
+            ha="center", va="center", fontsize=9.2,
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 1.5})
+    ax.text(0.235, y0 + 0.110, rf"$\epsilon_C={eps_c:+d}$",
+            ha="center", fontsize=11, fontweight="bold")
+    ax.text(0.68, y0 + 0.110, r"$\epsilon_P=+1$",
+            ha="center", fontsize=11, fontweight="bold")
+
+    chi_start, chi_end = ((0.33, 0.15) if chi_points_left else (0.15, 0.33))
+    arrow(ax, (chi_start, y0 + 0.045), (chi_end, y0 + 0.045), filled=False)
+    ax.text(0.24, y0 + 0.070, r"increasing $\chi$", ha="center", fontsize=9)
+    arrow(ax, (0.61, y0 + 0.045), (0.86, y0 + 0.045), filled=False)
+    ax.text(0.735, y0 + 0.070, r"increasing $R$ toward infinity", ha="center", fontsize=9)
 
 
 def main():
-    c = canvas.Canvas(str(OUT), pagesize=(W, H), pageCompression=1)
-    c.setFillColor(white); c.rect(0, 0, W, H, stroke=0, fill=1)
-    c.setFillColor(black); c.setStrokeColor(black)
-    centered(c, "Declared timelike junction and retained regions", W / 2, 646, 27, True)
+    fig, ax = plt.subplots(figsize=(12, 7.6))
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
+    ax.text(0.5, 0.965, "One common normal and the two retained Kantowski–Sachs intervals",
+            ha="center", va="center", fontsize=17, fontweight="bold")
 
-    # Retained regions, with restrained monochrome textures.
-    c.setFillColor(Color(.97, .97, .97)); c.rect(72, 143, 440, 455, stroke=1, fill=1)
-    c.setFillColor(Color(.985, .985, .985)); c.rect(512, 143, 616, 455, stroke=1, fill=1)
-    c.saveState()
-    clip = c.beginPath(); clip.rect(72, 143, 440, 455); c.clipPath(clip, stroke=0)
-    c.setStrokeColor(Color(.72, .72, .72)); c.setLineWidth(.7)
-    for x in range(-250, 750, 18): c.line(x, 143, x + 330, 598)
-    c.restoreState()
-    c.setFillColor(Color(.58, .58, .58))
-    for x in range(530, 1120, 22):
-        for y in range(160, 590, 22): c.circle(x, y, 1.1, stroke=0, fill=1)
-    c.setStrokeColor(black); c.setFillColor(black); c.setLineWidth(2)
-    c.rect(72, 143, 440, 455, stroke=1, fill=0); c.rect(512, 143, 616, 455, stroke=1, fill=0)
+    panel(ax, 0.55, "Case A", r"retain $\chi\leq\chi_\Sigma$", +1, False)
+    panel(ax, 0.18, "Case B", r"retain $\chi\geq\chi_\Sigma$", -1, True)
 
-    centered(c, "Homogeneous Kantowski-Sachs side", 292, 558, 24, True)
-    centered(c, "Retained Schwarzschild exterior", 820, 558, 24, True)
-    centered(c, "Areal radius depends only on time", 292, 520, 19)
-    centered(c, "F(R) = 1 - 2m/R > 0", 820, 520, 19)
+    ax.plot([0.04, 0.96], [0.135, 0.135], color="black", linewidth=0.8)
+    ax.text(0.04, 0.095,
+            "The arrows are the two one-sided limits of one normal, not normals independently directed into both retained regions.",
+            ha="left", va="center", fontsize=9.5)
+    ax.text(0.04, 0.055,
+            "The negative parent branch retains a different Schwarzschild side; it is not a convention change for this gluing.",
+            ha="left", va="center", fontsize=9.5)
 
-    # Timelike shell.
-    p = c.beginPath(); p.moveTo(512, 143)
-    p.curveTo(485, 230, 539, 322, 512, 415)
-    p.curveTo(485, 505, 539, 550, 512, 598)
-    c.setLineWidth(7); c.drawPath(p, stroke=1, fill=0)
-    c.setFont("Times-Bold", 22); c.drawString(535, 365, "Shell")
-    c.setFont("Times-Roman", 18); c.drawString(535, 337, "timelike shell")
-    c.drawString(535, 311, "areal radius R")
-
-    arrow(c, 518, 440, 685, 440)
-    centered(c, "parent normal: outward (+ branch)", 610, 460, 19)
-    arrow(c, 675, 270, 965, 270, True)
-    centered(c, "increasing areal radius R", 820, 291, 19)
-    c.circle(1060, 270, 7, stroke=0, fill=1)
-    centered(c, "spatial infinity", 1060, 299, 19)
-    arrow(c, 505, 220, 397, 220, True)
-    centered(c, "child normal: either orientation", 430, 241, 19)
-
-    c.setLineWidth(1.5); c.line(72, 105, 1128, 105)
-    c.setFont("Times-Roman", 18)
-    c.drawString(72, 70, "Ordinary exterior branch: the retained parent contains spatial infinity, so its normal points toward increasing R.")
-    c.drawString(72, 39, "The negative parent branch retains a different Schwarzschild side; it is not a sign alternative for this gluing.")
-    c.showPage(); c.save()
-    print(OUT)
+    fig.savefig(HERE / "figure1_junction_orientation.pdf", bbox_inches="tight")
+    fig.savefig(HERE / "figure1_junction_orientation.svg", bbox_inches="tight")
+    plt.close(fig)
+    print(HERE / "figure1_junction_orientation.pdf")
+    print(HERE / "figure1_junction_orientation.svg")
 
 
 if __name__ == "__main__":

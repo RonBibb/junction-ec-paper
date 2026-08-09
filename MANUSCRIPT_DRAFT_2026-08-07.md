@@ -9,7 +9,7 @@ ORCID: 0009-0004-1153-2464
 
 ## Abstract
 
-We prove a strict surface-energy obstruction for timelike spherical junctions between a homogeneous Kantowski–Sachs (KS) region and the ordinary asymptotically flat Schwarzschild exterior. Because the KS areal radius has no longitudinal spatial gradient, \(2m_{{\rm MS},C}/B\ge1\) throughout the region. For every matched radius with \(F(R)>0\), every finite shell rapidity, and either child orientation, the angular Israel equation therefore requires \(\sigma<0\). Weak and dominant energy conditions fail independently of surface pressure, without a critical radius or cosmological-constant scale. Null-energy-condition violation remains trajectory dependent. For an exact static comoving family, it occurs precisely outside the Schwarzschild photon sphere, \(R_0>3m\); a Nariai \(dS_2\times S^2\) realization exists with \(\Lambda=R_0^{-2}\), a scale specific to that auxiliary family. The result is a strict KS specialization of established spherical-shell theory and explains why a direct timelike completion to the retained ordinary exterior requires exotic surface energy. It does not apply inside the horizon or to spacelike or wormhole-connected transitions.
+We prove a strict surface-energy obstruction for timelike spherical junctions between a homogeneous Kantowski–Sachs (KS) region and the ordinary asymptotically flat Schwarzschild exterior. Because the KS areal radius has no longitudinal spatial gradient, \(2m_{{\rm MS},C}/B\ge1\) throughout the region. For every matched radius with \(F(R)>0\) and every compatible finite-rapidity embedding, the angular Israel equation requires \(\sigma<0\) for either explicitly retained KS interval. Weak and dominant energy conditions fail independently of surface pressure, without a critical radius or cosmological-constant scale. Null-energy-condition violation remains trajectory dependent. For an exact static comoving junction family, it occurs precisely outside the Schwarzschild photon sphere, \(R_0>3m\); a Nariai \(dS_2\times S^2\) geometric witness exists with \(\Lambda=R_0^{-2}\), a scale specific to that auxiliary family. The result is a strict KS specialization of established spherical-shell theory. Any thin-wall model satisfying these geometric, causal, and global hypotheses requires negative surface density. The theorem does not apply inside the horizon or to spacelike, finite-thickness, or wormhole-connected transitions.
 
 ## 1. Introduction
 
@@ -17,7 +17,7 @@ Matching spacetime regions across a hypersurface is a standard construction in g
 
 The last application requires careful causal and global bookkeeping. A transition surface may be timelike, spacelike, or null; the retained side of each geometry fixes the physically relevant normal orientations; and expansion of total spatial volume need not imply expansion of the areal radius. A Kantowski–Sachs representation does not by itself establish an expanding cosmology, and a Schwarzschild-time divergence at a horizon does not establish a reversed time direction.
 
-Berezin, Kuzmin, and Tkachev (BKT) [2] derive invariant outer-curvature and junction equations valid for arbitrary spherically symmetric shells, including dynamical geometries and changes between ordinary and wormhole branches. Farhi and Guth [3], Blau, Guendelman, and Guth [4], and Farhi, Guth, and Guven [5] establish the closest physical lineage: the classical obstruction to producing an inflating universe on the ordinary asymptotic branch, the global dynamics of false-vacuum bubbles, and quantum access to the expanding wormhole-connected branch. Rosa and Carloni [6] give a complementary covariant treatment for locally rotationally symmetric spacetimes and boundaries of all causal types. The present paper does not replace or generalize those frameworks. It proves their strict consequence for a homogeneous Kantowski–Sachs side joined to the retained asymptotically flat Schwarzschild exterior. Related work has used Kantowski–Sachs variables for distinct null-shell problems [7]. Historic black-hole-to-cosmology constructions instead place the transition on a spacelike surface inside the black hole [8,9].
+Berezin, Kuzmin, and Tkachev (BKT) [2] derive invariant outer-curvature and junction equations valid for arbitrary spherically symmetric shells, including dynamical geometries and changes between ordinary and wormhole branches. Farhi and Guth [3], Blau, Guendelman, and Guth [4], and Farhi, Guth, and Guven [5] establish the closest physical lineage: the classical obstruction to producing an inflating universe on the ordinary asymptotic branch, the global dynamics of false-vacuum bubbles, and quantum access to the expanding wormhole-connected branch. Rosa and Carloni [6] give a complementary covariant treatment for locally rotationally symmetric spacetimes and boundaries of all causal types. The present paper does not replace or generalize those frameworks. It proves their strict consequence for a homogeneous Kantowski–Sachs side joined to the retained asymptotically flat Schwarzschild exterior. Sharif and Abbas [18] previously calculated surface density and tangential pressure for a distinct Kantowski–Sachs--Minkowski shell, while Uzan, Ellis, and Larena [19] matched static Kottler regions to a Kantowski–Sachs region at a cosmological horizon. Neither construction is the timelike KS/ordinary-Schwarzschild matching with \(F>0\) considered here. Related work has used Kantowski–Sachs variables for distinct null-shell problems [7]. Historic black-hole-to-cosmology constructions instead place the transition on a spacelike surface inside the black hole [8,9].
 
 The same distinction is relevant to quantum-corrected black-hole interiors. Representative loop-quantum-gravity models treat the Schwarzschild interior as a homogeneous KS system: the classical singularity is replaced by a Nariai-type late-time region [14], a bounce into a white-hole interior [15], or a transition surface separating trapped and anti-trapped regions within a larger effective extension [16]. An explicit Schwarzschild-to-KS construction using a localized layer instead places a spacelike S-brane inside the horizon [17]. None of these models uses the timelike ordinary-\(F>0\) junction studied here. The present theorem does not test their quantum dynamics; it supplies the classical boundary diagnostic for a different completion in which a KS region would be attached directly to the retained ordinary exterior.
 
@@ -25,7 +25,7 @@ We show why the corresponding direct ordinary-exterior timelike construction is 
 
 The principal result is the KS sign theorem and its implication for the direct ordinary-exterior construction. The derivation fixes the exterior orientation from the retained global region, obtains both independent mixed curvature components, closes the Israel and Codazzi relations, contrasts the KS product structure with FRW geometry, treats turning points without division by \(\dot R\), and reproduces the exterior curvature in ingoing Eddington–Finkelstein coordinates.
 
-The theorem applies to the comoving interface and to any finite radial shell trajectory satisfying the declared embedding and areal matching relation, while \(R>0\) and \(F>0\). It does not cover \(F<0\), spacelike transitions, alternative global gluings, finite-thickness layers, or independent surface-spin sectors.
+The theorem applies to the comoving interface and to every compatible finite-rapidity shell embedding satisfying the proper-time and areal-matching relations, while \(R>0\) and \(F>0\). It does not cover \(F<0\), spacelike transitions, alternative global gluings, finite-thickness layers, or independent surface-spin sectors.
 
 One interpretive warning will matter later: Kantowski–Sachs total-volume expansion, governed by \(\Theta=H_A+2H_B\), does not imply expansion of the symmetry spheres, which requires \(H_B>0\). Section 9 gives the corresponding shear identity and explains why this distinction prevents the junction calculation from being read as evidence for an areal bounce.
 
@@ -58,7 +58,7 @@ R(\tau)=B(t_C(\tau)).
 \tag{3}
 \]
 
-The comoving case has \(\dot\chi=0\); the moving case permits an otherwise arbitrary finite radial trajectory subject to Eq. (3). A dot denotes \(d/d\tau\), where \(\tau\) is shell proper time. Both embeddings are future oriented: we choose \(\dot t_C>0\), and in the \(F>0\) Schwarzschild region we choose \(\dot T>0\). Thus Eq. (15) uses the positive root \(\gamma=\dot t_C=\sqrt{1+X^2}\), while Eq. (10) uses \(\dot T=\beta/F>0\).
+The comoving case has \(\dot\chi=0\); the moving case permits every compatible finite-rapidity embedding satisfying Eq. (3), the proper-time normalizations, and the differentiated matching relation (18). Thus \(R(\tau)\), \(X(\tau)\), and their derivatives are not independent trajectory data once the bulk function \(B(t_C)\) and an embedding have been chosen. A dot denotes \(d/d\tau\), where \(\tau\) is shell proper time. Both embeddings are future oriented: we choose \(\dot t_C>0\), and in the \(F>0\) Schwarzschild region we choose \(\dot T>0\). Thus Eq. (15) uses the positive root \(\gamma=\dot t_C=\sqrt{1+X^2}\), while Eq. (10) uses \(\dot T=\beta/F>0\).
 
 The Schwarzschild parent is
 
@@ -87,7 +87,13 @@ The surface tensor is
 \tag{6}
 \]
 
-We define
+To fix the signed junction unambiguously, introduce a Gaussian-normal coordinate \(\eta\) in a neighborhood of the shell, with \(\eta=0\) on \(\Sigma\), \(\eta<0\) on the retained KS side, and \(\eta>0\) on the retained Schwarzschild side. We use the single normal
+
+\[
+n_\mu=\nabla_\mu\eta,
+\]
+
+directed from \(M_C\) to \(M_P\). The symbols \(n_{\mu,C}\) and \(n_{\mu,P}\) below are its one-sided limits, not two independently chosen outward normals. In particular, the common normal points out of the retained child region and into the retained parent exterior. We define
 
 \[
 [K^a{}_b]=K^a{}_{b,P}-K^a{}_{b,C}
@@ -104,7 +110,7 @@ K_{ab}=e_a{}^\mu e_b{}^\nu\nabla_\mu n_\nu.
 \tag{8}
 \]
 
-The convention is anchored by \(K^\theta{}_\theta=+1/R\) for the outward normal to a round sphere in flat space. Orientation signs are denoted \(\epsilon_P,\epsilon_C\in\{-1,+1\}\).
+The convention is anchored by \(K^\theta{}_\theta=+1/R\) for the outward normal to a round sphere in flat space. Orientation signs \(\epsilon_P,\epsilon_C\in\{-1,+1\}\) encode the components of this same common normal in the two coordinate charts.
 
 **Table 1. Core conventions.**
 
@@ -114,6 +120,7 @@ The convention is anchored by \(K^\theta{}_\theta=+1/R\) for the outward normal 
 | Jump | \([K^a{}_b]=K^a{}_{b,P}-K^a{}_{b,C}\) |
 | Surface tensor | \(\Sigma^a{}_b=\mathrm{diag}(-\sigma,p_s,p_s)\) |
 | Extrinsic curvature | \(K_{ab}=e_a{}^\mu e_b{}^\nu\nabla_\mu n_\nu\) |
+| Common normal | \(n=d\eta\), directed from retained KS side to retained Schwarzschild side |
 | Ordinary retained exterior | \(\epsilon_P=+1\) |
 | Theorem domain | \(F(R)>0\), finite real \(X\) |
 
@@ -121,22 +128,22 @@ Figure 1 summarizes the declared geometry, retained regions, and normal orientat
 
 ![Junction geometry and normal orientations](figures/figure1_junction_orientation.svg)
 
-**Figure 1.** Declared spherical timelike junction. The retained Schwarzschild parent contains spatial infinity, fixing its normal toward increasing areal radius and hence \(\epsilon_P=+1\). The \(\epsilon_P=-1\) algebraic branch retains a different Schwarzschild side; it is not a sign alternative for the same global gluing. The child-side orientation remains explicit through \(\epsilon_C=\pm1\).
+**Figure 1.** Declared spherical timelike junction with the single Gaussian normal \(n=d\eta\) directed from \(M_C\) to \(M_P\). The retained Schwarzschild parent contains spatial infinity, so the parent limit of the common normal points toward increasing areal radius and \(\epsilon_P=+1\). On the KS side, retaining \(\chi\le\chi_\Sigma\) gives \(\epsilon_C=+1\), while retaining \(\chi\ge\chi_\Sigma\) gives \(\epsilon_C=-1\); in both cases the common normal points out of the retained KS region toward the parent. The \(\epsilon_P=-1\) algebraic branch retains a different Schwarzschild side and is not a sign alternative for this gluing.
 
-## 3. Exterior-orientation lemma
+## 3. Common-normal and retained-side lemma
 
-**Lemma 1.** If the retained parent region is the Schwarzschild exterior containing spatial infinity and the normal points from the shell into that retained region, then
+**Lemma 1.** Let \(n=d\eta\) be directed from the retained KS region to the retained Schwarzschild region. If the parent contains spatial infinity, then
 
 \[
 \epsilon_P=+1.
 \tag{9}
 \]
 
-**Proof.** The areal coordinate increases from the shell toward the asymptotically flat end. The parent normal derived below has \(n_P^R=\epsilon_P\beta\), with \(\beta>0\). Hence a normal directed into the retained exterior requires \(\epsilon_P=+1\). \(\square\)
+**Proof.** The areal coordinate increases from the shell toward the asymptotically flat end. The parent limit of the common normal derived below has \(n_P^R=\epsilon_P\beta\), with \(\beta>0\). Because increasing \(\eta\) enters the retained exterior, \(\epsilon_P=+1\). On the child side, \(n_C^\chi=\epsilon_C\gamma/A\). If the retained interval is \(\chi\le\chi_\Sigma\), increasing \(\eta\) crosses its boundary toward increasing \(\chi\), so \(\epsilon_C=+1\). If the retained interval is \(\chi\ge\chi_\Sigma\), the crossing is toward decreasing \(\chi\), so \(\epsilon_C=-1\). \(\square\)
 
-The algebraic branch \(\epsilon_P=-1\) retains the opposite side or describes a throat/back-to-back gluing; it is the branch used for wormhole-connected false-vacuum-bubble constructions [4,5]. It is not an alternative convention for the same exterior. Simultaneously reversing both normals and the jump order leaves the physical surface tensor unchanged.
+The algebraic branch \(\epsilon_P=-1\) retains the opposite side or describes a throat/back-to-back gluing; it is the branch used for wormhole-connected false-vacuum-bubble constructions [4,5]. It is not an alternative convention for the same exterior. Reversing the single common normal while also reversing the jump order leaves the physical surface tensor unchanged.
 
-The child sign has a different status. Once a KS region and a timelike boundary are specified, \(\epsilon_C\) records which of the two local KS sides is retained and hence which unit normal points from the shell into that retained child region. The alternatives \(\epsilon_C=\pm1\) therefore describe distinct retained-side embeddings, not an arbitrary reversal of one normal while holding the gluing fixed. In both cases the jump order remains parent minus child as declared in Eq. (7), and the parent normal remains fixed by the retained asymptotically flat exterior. Theorem 1 proves the same sign conclusion for either admissible child-side choice.
+The child sign therefore labels two explicit retained-side gluings, not an independently adjustable normal: \(\epsilon_C=+1\) for \(\chi\le\chi_\Sigma\) retained and \(\epsilon_C=-1\) for \(\chi\ge\chi_\Sigma\) retained. In both constructions the normal is the same geometrical object, directed from child to parent, the jump order remains parent minus child, and the parent sign remains fixed by spatial infinity. Theorem 1 proves the same sign conclusion for either gluing.
 
 ## 4. Complete extrinsic curvature
 
@@ -260,7 +267,7 @@ and reproduces both components exactly. In the comoving limit \(X=\dot X=0\), bo
 
 The invariant origin of the angular comparison is BKT's general formula \(K^\theta{}_\theta=R^{-1}n^\mu\nabla_\mu R\) and their angular Israel equation [2, p. 2925, Eqs. (2.54a) and (2.59a)]. BKT's orientation sign records whether areal radius increases or decreases along the outward normal, the same geometric distinction encoded here by \(\epsilon_P\) and \(\epsilon_C\); our jump is ordered parent minus child as in Eq. (7), and Eq. (8) fixes the corresponding Israel sign. The following theorem is the strict Kantowski–Sachs–Schwarzschild specialization.
 
-**Theorem 1 (KS ordinary-exterior specialization).** Consider the moving embedding (3) of a homogeneous Kantowski–Sachs region into a Schwarzschild exterior with \(R>0\) and \(F(R)>0\). Retain the parent region containing spatial infinity and use conventions (6)–(8). For every finite real \(X\),
+**Theorem 1 (KS ordinary-exterior specialization).** Consider a compatible finite-rapidity embedding (3) of a homogeneous Kantowski–Sachs region into a Schwarzschild exterior with \(R>0\) and \(F(R)>0\). Retain the parent region containing spatial infinity, retain either \(\chi\le\chi_\Sigma\) or \(\chi\ge\chi_\Sigma\) on the child side, and use the common-normal conventions (6)–(8). For every finite real \(X\) allowed by that embedding,
 
 \[
 \Delta K_\theta
@@ -434,7 +441,7 @@ All independent tensor residuals vanish after substitution. Useful combinations 
 \tag{39}
 \]
 
-### 6.1 Null-energy criterion and the static comoving family
+### 6.1 Null-energy criterion and a static comoving junction family
 
 The shell NEC is controlled by the signed scalar
 
@@ -453,7 +460,7 @@ The shell NEC is controlled by the signed scalar
 
 Equation (38) shows that the NEC is satisfied when \(\mathcal N\ge0\) and violated when \(\mathcal N<0\). The logical hierarchy is therefore sharp: \(\sigma<0\) is universal under Theorem 1, whereas NEC violation is not. The sign of \(\mathcal N\) depends additionally on the shell trajectory, acceleration, and child-side kinematics and orientation.
 
-**Proposition 2 (static comoving family).** Fix \(m>0\) and \(R_0>2m\). Suppose the declared junction contains an exact static comoving boundary segment on which
+**Proposition 2 (static comoving junction family).** Fix \(m>0\) and \(R_0>2m\). Suppose the declared junction contains an exact static comoving boundary segment on which
 
 \[
 X=\dot X=0,
@@ -507,11 +514,11 @@ Within the theorem domain, the shell NEC is therefore violated for \(R_0>3m\), s
 
 Equivalently, \(-1<w_s<-1/2\) in the NEC-violating interval, \(w_s=-1\) at the threshold, and \(w_s<-1\) below it. These ratios classify the surface tensor algebraically; because \(\sigma_0<0\), they should not be read as ordinary positive-density fluid equations of state. The second relation in Eq. (41c) shows that the second \(2+1\)-dimensional SEC inequality is satisfied throughout the family, so its SEC disposition is controlled entirely by the NEC. This proves the proposition. \(\square\)
 
-The threshold \(R_0=3m\) is the Schwarzschild photon-sphere radius, so this static family violates NEC precisely outside the photon sphere. Figure 2 displays the four surface-stress combinations across the family. The same algebraic boundary appears in the distinct construction of a static Schwarzschild thin-shell wormhole, for which NEC is satisfied at the throat when \(2m<a_0\le3m\) [13, Appendix A]. That construction glues two Schwarzschild exteriors with wormhole orientations; Proposition 2 instead has vanishing child curvature from a KS product region and retains one ordinary exterior. The shared threshold is therefore attributed to the static Schwarzschild curvature combination, not claimed as unique to KS.
+The threshold \(R_0=3m\) is the Schwarzschild photon-sphere radius, so the required surface tensor violates NEC precisely outside the photon sphere within this static junction family. Figure 2 displays the four surface-stress combinations across the family. The same algebraic boundary appears in the distinct construction of a static Schwarzschild thin-shell wormhole, for which NEC is satisfied at the throat when \(2m<a_0\le3m\) [13, Appendix A]. That construction glues two Schwarzschild exteriors with wormhole orientations; Proposition 2 instead has vanishing child curvature from a KS product region and retains one ordinary exterior. The shared threshold is therefore attributed to the static Schwarzschild curvature combination, not claimed as unique to KS.
 
 ![Surface stresses for the static comoving family](figures/figure2_static_family.pdf)
 
-**Figure 2.** Dimensionless surface stresses for the exact static comoving family as functions of \(R_0/m\). The surface density remains negative and \(\sigma_0+2p_{s0}\) remains positive throughout \(R_0>2m\), while \(\sigma_0+p_{s0}\) changes sign at the Schwarzschild photon sphere, \(R_0=3m\). The plotting window truncates the pressure divergences as \(R_0\to2m^+\).
+**Figure 2.** Dimensionless surface stresses required by the exact static comoving junction configurations as functions of \(R_0/m\). Each plotted radius corresponds to a different Nariai scale \(\Lambda=R_0^{-2}\), not to a sequence of equilibria in one fixed bulk theory. The surface density remains negative and \(\sigma_0+2p_{s0}\) remains positive throughout \(R_0>2m\), while \(\sigma_0+p_{s0}\) changes sign at the Schwarzschild photon sphere, \(R_0=3m\). The plotting window truncates the pressure divergences as \(R_0\to2m^+\).
 
 The family is not merely a pointwise kinematic assignment. An explicit isotropic bulk realization is obtained by taking \(B=R_0\) throughout a KS interval. In \(c=1\) units, the independent Einstein equations then reduce to
 
@@ -533,7 +540,7 @@ A(t_C)=A_+e^{t_C/R_0}+A_-e^{-t_C/R_0},
 \tag{41e}
 \]
 
-on any interval where \(A>0\). This is the KS form of the Nariai \(dS_2\times S^2\) product region [12], with \(\Lambda=R_0^{-2}\). Its comoving boundary has zero child extrinsic curvature and zero matter flux, so Eqs. (41b)–(41c) give the complete Israel layer required to attach it to a Schwarzschild exterior with vanishing cosmological constant. Each value of \(R_0\) fixes a different vacuum-energy scale; this is not a radius family within one theory with fixed \(\Lambda\). The scale-free statement belongs only to Theorem 1, whereas Proposition 2 is a special product solution with a radius-dependent bulk scale. This example establishes existence of the local bulk geometry and junction data; it does not establish radial stability or promote the \(3m\) threshold to generic KS evolution.
+on any interval where \(A>0\). This is the KS form of the Nariai \(dS_2\times S^2\) product region [12], with \(\Lambda=R_0^{-2}\). Its comoving boundary has zero child extrinsic curvature and zero matter flux, so Eqs. (41b)–(41c) give the complete Israel layer required to attach it to a Schwarzschild exterior with vanishing cosmological constant. Each value of \(R_0\) fixes a different vacuum-energy scale; this is not a radius family within one theory with fixed \(\Lambda\). The scale-free statement belongs only to Theorem 1, whereas Proposition 2 is a special product solution with a radius-dependent bulk scale. This example is a static geometric junction witness: it establishes the local bulk geometry and required surface tensor, but supplies neither a surface action nor an equation of state proving dynamical support. It therefore does not establish equilibrium, radial stability, or a generic KS threshold.
 
 At the level of thin-wall architecture, this realization parallels the false-vacuum interior/true-vacuum exterior problem studied by Blau, Guendelman, and Guth [4]. The comparison is structural rather than an identification: their interior is four-dimensional de Sitter geometry and their analysis includes the ordinary and wormhole-connected global branches, whereas Proposition 2 uses a \(dS_2\times S^2\) product interior and isolates the ordinary-exterior static surface tensor. The photon-sphere threshold is therefore a result of this KS static specialization, not a critical radius imported from the de Sitter bubble problem.
 
@@ -578,7 +585,33 @@ D_a\Sigma^a{}_b
 \tag{44}
 \]
 
-The Schwarzschild side is vacuum. For an isotropic perfect fluid comoving with the Kantowski–Sachs coordinates, the child energy and longitudinal-pressure equations are
+The Schwarzschild side is vacuum. For a comoving diagonal KS source
+
+\[
+T^{\hat a}{}_{\hat b}
+=\operatorname{diag}(-\rho,p_\chi,p_\perp,p_\perp),
+\]
+
+only the longitudinal pressure enters the shell-crossing flux. Projection using the common normal gives
+
+\[
+T_{\mu\nu,C}n_C^\mu e_\tau^\nu
+=\epsilon_C\gamma X(\rho+p_\chi).
+\tag{45}
+\]
+
+The Codazzi identity therefore reduces in \(c=1\) units to
+
+\[
+\boxed{
+\dot\sigma
++2\frac{\dot R}{R}(\sigma+p_s)
+=-\epsilon_C\gamma X(\rho+p_\chi).
+}
+\tag{46}
+\]
+
+This is the general comoving diagonal-source conservation law needed for the theorem's KS class; it does not assume pressure isotropy. For the isotropic perfect-fluid specialization, \(p_\chi=p_\perp=p\), the child energy and pressure equations are
 
 \[
 \kappa\rho=2H_AH_B+H_B^2+\frac{1}{B^2},
@@ -591,21 +624,10 @@ Their sum gives
 \[
 \frac{dH_B}{dt_C}-H_AH_B+H_B^2
 =-\frac{\kappa}{2}(\rho+p).
-\tag{45}
+\tag{45a}
 \]
 
-Using Eqs. (17)–(19), the Codazzi identity reduces in \(c=1\) units to
-
-\[
-\boxed{
-\dot\sigma
-+2\frac{\dot R}{R}(\sigma+p_s)
-=-\epsilon_C\gamma X(\rho+p).
-}
-\tag{46}
-\]
-
-Direct projection of the perfect-fluid stress gives the same bulk flux. The right-hand side is the kinematic flux measured when a moving shell crosses comoving child matter. It is not a parent-to-child deposition law. In the comoving limit, \(X=0\) and the flux vanishes.
+Using Eqs. (17)–(19), differentiating the Israel tensor and applying Eq. (45a) reproduces Eq. (46) with \(p_\chi=p\), providing an independent closure check. The right-hand side is the kinematic flux measured when a moving shell crosses comoving child matter. It is not a parent-to-child deposition law. In the comoving limit, \(X=0\) and the flux vanishes.
 
 ## 8. Turning point and regular-chart controls
 
@@ -673,7 +695,7 @@ which is finite. The surface tensor also remains finite for finite acceleration.
 
 The affirmative KS result is geometric and region-wide. Because the Kantowski–Sachs product geometry has areal radius \(B(t_C)\) with no longitudinal spatial gradient, Eq. (31) shows that \(2m_{{\rm MS},C}/B\ge1\) identically throughout the region, with equality only where \(dB/dt_C=0\). The shell relation \(R=B\) is imposed only when evaluating a matched event. The obstruction therefore applies at every matched radius in the ordinary \(F>0\) exterior, with no critical radius or cosmological-constant scale.
 
-BKT [2] supply the general invariant angular-curvature formula and its surface-energy junction equation for arbitrary spherical shells; consequently neither the signed-root mechanism nor its availability for dynamical spherical interiors is claimed as new here. Rosa and Carloni [6] supply the encompassing covariant LRS framework. The result proved here is the explicit comoving/moving KS specialization and the strict sign inequality (25) for the ordinary retained Schwarzschild exterior. The FRW comparison identifies the product-geometric premise, while the orientation, conservation, turning-point, and regular-chart calculations close the physical statement. We have not found a prior publication stating the same KS/ordinary-exterior theorem. The distinct Schwarzschild thin-shell-wormhole result [13] already contains the static \(3m\) NEC threshold; Proposition 2 therefore claims the KS/Nariai surface tensor and its interpretation, not novelty for that radius alone.
+BKT [2] supply the general invariant angular-curvature formula and its surface-energy junction equation for arbitrary spherical shells; consequently neither the signed-root mechanism nor its availability for dynamical spherical interiors is claimed as new here. Rosa and Carloni [6] supply the encompassing covariant LRS framework. Two closer KS comparisons delimit the specialization. Sharif and Abbas [18] derive the surface stresses of a KS--Minkowski shell, rather than the strict sign for an ordinary Schwarzschild exterior. Uzan, Ellis, and Larena [19] obtain an exact KS construction by matching to Kottler regions on a cosmological horizon; their boundary is not the \(F>0\) timelike shell of Theorem 1. The result proved here is the explicit comoving/moving KS specialization and the strict sign inequality (25) for the ordinary retained Schwarzschild exterior. The FRW comparison identifies the product-geometric premise, while the common-normal, conservation, turning-point, and regular-chart calculations close the physical statement. We have not found a prior publication stating the same KS/ordinary-exterior theorem. The distinct Schwarzschild thin-shell-wormhole result [13] already contains the static \(3m\) NEC threshold; Proposition 2 therefore claims the KS/Nariai surface tensor and its interpretation, not novelty for that radius alone.
 
 The \(F>0\) restriction is the invariant untrapped-parent condition, not an arbitrary cutoff. For \(F<0\), the standard Schwarzschild black-hole time orientation is future trapped and the time-reversed white-hole orientation is past trapped. The strict comparison between the KS non-untrapped sector and the untrapped Schwarzschild exterior used in Eqs. (24) and (33) therefore lifts in the complementary problem. The spacelike layers used by Frolov, Markov, and Mukhanov [8,9] pose a different junction problem inside that regime. The theorem does not obstruct their chosen architecture; it explains why the corresponding ordinary-exterior timelike alternative needs exotic support.
 
@@ -703,9 +725,9 @@ The symmetry-sphere curvature sources anisotropy, so \(\Theta>0\) does not imply
 
 ## 10. Conclusions
 
-We proved a strict surface-energy obstruction for the declared class of comoving and moving timelike boundaries between a homogeneous Kantowski–Sachs region and the ordinary asymptotically flat Schwarzschild exterior. The KS product geometry places its symmetry spheres in the non-untrapped sector throughout the region. For finite rapidity and \(F>0\), the child angular curvature is strictly smaller in magnitude than the parent contribution. Retaining the region containing spatial infinity fixes the parent sign, making the angular jump positive for either child-side orientation.
+We proved a strict surface-energy obstruction for the declared class of comoving and compatible moving timelike boundaries between a homogeneous Kantowski–Sachs region and the ordinary asymptotically flat Schwarzschild exterior. A single Gaussian normal is directed from the retained KS region to the retained parent. The KS product geometry places its symmetry spheres in the non-untrapped sector throughout the region. For finite rapidity and \(F>0\), the child angular curvature is strictly smaller in magnitude than the parent contribution. Retaining the region containing spatial infinity fixes the parent sign, making the angular jump positive whether the child retains \(\chi\le\chi_\Sigma\) or \(\chi\ge\chi_\Sigma\).
 
-Negative Israel surface density, \(\sigma<0\), is therefore universal under the theorem's ordinary retained exterior, \(F>0\), finite-rapidity, timelike-embedding, and declared-orientation hypotheses. WEC and DEC fail independently of the surface pressure. NEC violation is not universal: it requires the additional trajectory condition \(\Delta K_\tau-\Delta K_\theta<0\). Proposition 2 proves that for the exact static comoving family this condition holds precisely outside the Schwarzschild photon sphere, \(R_0>3m\), with saturation at \(R_0=3m\); the \(2+1\)-dimensional SEC has the same threshold within that family. Its Nariai-type bulk witness has \(\Lambda=R_0^{-2}\), a scale specific to that auxiliary realization and absent from Theorem 1. The surface conservation identity closes, the turning-point limit preserves the obstruction, and the exterior curvature agrees in Schwarzschild and ingoing Eddington–Finkelstein coordinates.
+Negative Israel surface density, \(\sigma<0\), is therefore universal under the theorem's ordinary retained exterior, \(F>0\), finite-rapidity, timelike-embedding, and common-normal hypotheses. WEC and DEC fail independently of the surface pressure. NEC violation is not universal: it requires the additional trajectory condition \(\Delta K_\tau-\Delta K_\theta<0\). Proposition 2 proves that for the exact static comoving junction family this condition holds precisely outside the Schwarzschild photon sphere, \(R_0>3m\), with saturation at \(R_0=3m\); the \(2+1\)-dimensional SEC has the same threshold within that family. Its Nariai-type geometric witness has \(\Lambda=R_0^{-2}\), a scale specific to that auxiliary realization and absent from Theorem 1. The anisotropic-source surface conservation identity closes with longitudinal pressure \(p_\chi\), the turning-point limit preserves the obstruction, and the exterior curvature agrees in Schwarzschild and ingoing Eddington–Finkelstein coordinates.
 
 This is neither a new general spherical-junction formalism nor a universal no-go theorem for black-hole-to-cosmology transitions. It leaves open interior and spacelike junctions, alternative global gluings, and finite-thickness layers. Its value is narrower: it extracts from established machinery a strict KS/Schwarzschild surface-energy result and closes the orientation, conservation, turning-point, and chart-regularity checks needed to use it without hidden branch assumptions.
 
@@ -717,7 +739,7 @@ Software used in this work includes Python, SymPy, SciPy, ReportLab, PGFPlots, a
 
 ## Data and code availability
 
-No observational or experimental datasets were generated or analyzed in this study. The symbolic derivations, numerical checks, figure sources, and one-command verification suite supporting the results are available from the corresponding author upon reasonable request.
+No observational or experimental datasets were generated or analyzed in this study. The manuscript source, figure-generation scripts, symbolic and numerical verification suite, and exact pinned provenance modules are publicly available at https://github.com/RonBibb/junction-ec-paper. A versioned archival release with a permanent DOI will be cited in the submission version.
 
 ## Appendix A. Orthonormal-frame check
 
@@ -814,3 +836,7 @@ These are Eq. (37). Substitution into all three mixed equations gives zero resid
 [16] A. Ashtekar, J. Olmedo, and P. Singh, “Quantum extension of the Kruskal spacetime,” Phys. Rev. D 98, 126003 (2018), doi:10.1103/PhysRevD.98.126003, arXiv:1806.02406.
 
 [17] R. Brandenberger, L. Heisenberg, and J. Robnik, “Non-singular black holes with a zero-shear S-brane,” J. High Energy Phys. 05 (2021) 090, doi:10.1007/JHEP05(2021)090, arXiv:2103.02842.
+
+[18] M. Sharif and G. Abbas, “Gravitational collapse: Expanding and collapsing regions,” Gen. Relativ. Gravit. 43, 1179–1188 (2011), doi:10.1007/s10714-010-0952-1, arXiv:1008.2805.
+
+[19] J.-P. Uzan, G. F. R. Ellis, and J. Larena, “A two-mass expanding exact space-time solution,” Gen. Relativ. Gravit. 43, 191–205 (2011), doi:10.1007/s10714-010-1081-6, arXiv:1005.1809.
