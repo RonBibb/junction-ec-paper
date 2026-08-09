@@ -9,7 +9,7 @@ ORCID: 0009-0004-1153-2464
 
 ## Abstract
 
-We prove a strict surface-energy obstruction for timelike spherical junctions between a homogeneous Kantowski–Sachs (KS) region and the ordinary asymptotically flat Schwarzschild exterior. Because the KS areal radius has no longitudinal spatial gradient, \(2m_{{\rm MS},C}/B\ge1\) throughout the region. For every matched radius with \(F(R)>0\) and every compatible finite-rapidity embedding, the angular Israel equation requires \(\sigma<0\) for either explicitly retained KS interval. Weak and dominant energy conditions fail independently of surface pressure, without a critical radius or cosmological-constant scale. Null-energy-condition violation remains trajectory dependent. For an exact static comoving junction family, it occurs precisely outside the Schwarzschild photon sphere, \(R_0>3m\), and an explicit Nariai product region supplies a local geometric witness. Thus, in the \(F>0\) region outside the horizon, a thin-wall construction attaching a homogeneous KS region directly to the retained ordinary Schwarzschild exterior requires negative surface density. The theorem does not apply inside the horizon or to spacelike, finite-thickness, or wormhole-connected transitions.
+We extract from invariant spherical-shell geometry a sufficient condition for negative Israel surface density: under the ordinary-exterior orientation, a timelike junction from a sector with \((\nabla R)^2\le0\) to one with \((\nabla R)^2>0\) has \(\sigma<0\). We then prove its strict Kantowski–Sachs (KS)/Schwarzschild specialization. Because the KS areal radius has no longitudinal spatial gradient, \(2m_{{\rm MS},C}/B\ge1\) throughout the region. Consequently, at every matched radius with \(F(R)>0\), every compatible finite-rapidity embedding and either explicitly retained KS interval require \(\sigma<0\). Weak and dominant energy conditions fail independently of surface pressure, without a critical radius or cosmological-constant scale; null-energy-condition violation remains trajectory dependent. For an exact static comoving junction family, it occurs precisely outside the Schwarzschild photon sphere, \(R_0>3m\), and an explicit Nariai product region supplies a local geometric witness. The result does not apply inside the horizon or to spacelike, finite-thickness, or wormhole-connected transitions.
 
 ## 1. Introduction
 
@@ -21,9 +21,9 @@ Berezin, Kuzmin, and Tkachev (BKT) [2] derive invariant outer-curvature and junc
 
 The same distinction is relevant to quantum-corrected black-hole interiors. Representative loop-quantum-gravity models treat the Schwarzschild interior as a homogeneous KS system: the classical singularity is replaced by a Nariai-type late-time region [14], a bounce into a white-hole interior [15], or a transition surface separating trapped and anti-trapped regions within a larger effective extension [16]. An explicit Schwarzschild-to-KS construction using a localized layer instead places a spacelike S-brane inside the horizon [17]. None of these models uses the timelike ordinary-\(F>0\) junction studied here. The present theorem does not test their quantum dynamics; it supplies the classical boundary diagnostic for a different completion in which a KS region would be attached directly to the retained ordinary exterior.
 
-We show why the corresponding direct ordinary-exterior timelike construction is obstructed. BKT's invariant formula already contains the underlying signed-root mechanism [2, p. 2925, Eq. (2.54a)]. In the Kantowski–Sachs specialization, the absence of a longitudinal areal-radius gradient makes the comparison strict: the magnitude of the child angular extrinsic curvature is smaller than the Schwarzschild exterior contribution whenever \(F>0\). Retaining the asymptotically flat exterior fixes the parent-normal direction, so the angular jump is positive for either child-side orientation. Negative surface energy density is therefore universal within the theorem domain; NEC violation is a separate, stronger conclusion that requires additional trajectory data.
+We first extract from BKT's invariant formula [2, p. 2925, Eq. (2.54a)] a sufficient-condition proposition: if a spherical timelike shell joins a sector with \((\nabla R)^2\le0\) to an ordinary-oriented sector with \((\nabla R)^2>0\), the angular Israel jump is strictly positive and the surface density is negative. The KS product geometry then supplies a region-wide realization of the first hypothesis, while the retained Schwarzschild \(F>0\) exterior supplies the second. This makes the KS comparison strict at every matched radius: the magnitude of the KS angular curvature is smaller than the Schwarzschild contribution for either retained KS interval. Negative surface energy density is therefore universal within the theorem domain; NEC violation is a separate, stronger conclusion requiring additional trajectory data. Section 5.2 shows why FRW homogeneity does not imply the same result: its areal radius retains a longitudinal spatial gradient.
 
-The principal result is the KS sign theorem and its implication for the direct ordinary-exterior construction. The derivation fixes the exterior orientation from the retained global region, obtains both independent mixed curvature components, closes the Israel and Codazzi relations, contrasts the KS product structure with FRW geometry, treats turning points without division by \(\dot R\), and reproduces the exterior curvature in ingoing Eddington–Finkelstein coordinates.
+The principal result is this invariant sufficient condition together with its strict, region-wide KS specialization and implication for the direct ordinary-exterior construction. The derivation fixes the exterior orientation from the retained global region, obtains both independent mixed curvature components, closes the Israel and Codazzi relations, contrasts the KS product structure with FRW geometry, treats turning points without division by \(\dot R\), and reproduces the exterior curvature in ingoing Eddington–Finkelstein coordinates.
 
 The theorem applies to the comoving interface and to every compatible finite-rapidity shell embedding satisfying the proper-time and areal-matching relations, while \(R>0\) and \(F>0\). It does not cover \(F<0\), spacelike transitions, alternative global gluings, finite-thickness layers, or independent surface-spin sectors.
 
@@ -271,7 +271,36 @@ and reproduces both components exactly. In the comoving limit \(X=\dot X=0\), bo
 
 ## 5. Thin-shell obstruction
 
-The invariant origin of the angular comparison is BKT's general formula \(K^\theta{}_\theta=R^{-1}n^\mu\nabla_\mu R\) and their angular Israel equation [2, p. 2925, Eqs. (2.54a) and (2.59a)]. BKT's orientation sign records whether areal radius increases or decreases along the outward normal, the same geometric distinction encoded here by \(\epsilon_P\) and \(\epsilon_C\); our jump is ordered parent minus child as in Eq. (7), and Eq. (8) fixes the corresponding Israel sign. The following theorem is the strict Kantowski–Sachs–Schwarzschild specialization.
+The invariant origin of the angular comparison is BKT's general formula \(K^\theta{}_\theta=R^{-1}n^\mu\nabla_\mu R\) and their angular Israel equation [2, p. 2925, Eqs. (2.54a) and (2.59a)]. BKT's orientation sign records whether areal radius increases or decreases along the outward normal, the same geometric distinction encoded here by \(\epsilon_P\) and \(\epsilon_C\); our jump is ordered parent minus child as in Eq. (7), and Eq. (8) fixes the corresponding Israel sign.
+
+**Proposition 1 (invariant sufficient condition).** Let a timelike spherical shell of areal radius \(R>0\) join two spherical regions, denoted \(C\) and \(P\), with one common normal directed from \(C\) to \(P\). Suppose that on the shell
+
+\[
+(\nabla R)^2_C\le0,
+\qquad
+(\nabla R)^2_P>0,
+\]
+
+and that the retained \(P\) region fixes the ordinary orientation \(K^\theta{}_{\theta,P}>0\). Then \(\Delta K_\theta>0\) and the angular Israel equation requires \(\sigma<0\), independently of the shell acceleration and surface pressure.
+
+**Proof.** Decomposing the areal-radius gradient in the orthonormal tangent-normal plane of the shell gives, on either side,
+
+\[
+(\nabla R)^2=-\dot R^2+\left(RK^\theta{}_{\theta}\right)^2.
+\]
+
+The two invariant hypotheses and the ordinary orientation therefore imply
+
+\[
+\left|K^\theta{}_{\theta,C}\right|
+\le\frac{|\dot R|}{R}
+<\frac{\sqrt{\dot R^2+(\nabla R)^2_P}}{R}
+=K^\theta{}_{\theta,P}.
+\]
+
+Thus \(\Delta K_\theta\ge K^\theta{}_{\theta,P}-|K^\theta{}_{\theta,C}|>0\), and Eq. (8) gives \(\sigma<0\). \(\square\)
+
+Proposition 1 is an explicit sufficient-condition extraction from the established invariant spherical-shell equations, not a new junction formalism. The following theorem shows that homogeneous KS geometry satisfies its interior hypothesis identically throughout the region and supplies the strict KS/ordinary-Schwarzschild specialization with both retained-side gluings made explicit.
 
 **Theorem 1 (KS ordinary-exterior specialization).** Consider a compatible finite-rapidity embedding (3) of a homogeneous Kantowski–Sachs region into a Schwarzschild exterior with \(R>0\) and \(F(R)>0\). Retain the parent region containing spatial infinity, retain either \(\chi\le\chi_\Sigma\) or \(\chi\ge\chi_\Sigma\) on the child side, and use the common-normal conventions (6)–(8). For every finite real \(X\) allowed by that embedding,
 
@@ -327,6 +356,15 @@ for either \(\epsilon_C\). The Israel equation then gives
 
 \(\square\)
 
+**Remark 1 (ultrarelativistic limiting sequence).** The theorem concerns timelike shells and therefore finite rapidity. Along a sequence of compatible timelike embeddings with \(|X|\to\infty\), however, \(|X|/\gamma\to1\), and the limiting lower estimate remains
+
+\[
+\Delta K_\theta
+\ge\frac{\sqrt{F+\dot R^2}-|\dot R|}{R}>0
+\]
+
+at every member with finite \(|\dot R|\) and \(F>0\). The gap need not be bounded uniformly away from zero when \(|\dot R|\) also grows without bound. This limiting observation does not add a null shell or an infinite-rapidity trajectory to the theorem's timelike domain.
+
 **Corollary 1 (comoving interface).** In the comoving limit \(X=0\), the child angular curvature vanishes and
 
 \[
@@ -340,7 +378,7 @@ Thus the ordinary-exterior obstruction includes the comoving interface as a stri
 
 ### 5.1 Invariant mass interpretation
 
-The direct proof above is decisive because it fixes the signed Israel jump and surface tensor. The same geometry admits a useful invariant cross-check through the Misner–Sharp geometrized mass length \(m_{\rm MS}=GM_{\rm MS}/c^2\), defined in spherical symmetry by
+Proposition 1 already isolates the invariant mechanism; the coordinate proof of Theorem 1 remains decisive for the two explicit KS retained-side gluings because it fixes their signed Israel jumps. The same geometry also admits a useful region-wide interpretation through the Misner–Sharp geometrized mass length \(m_{\rm MS}=GM_{\rm MS}/c^2\), defined in spherical symmetry by
 
 \[
 1-\frac{2m_{\rm MS}}{R}
@@ -388,7 +426,7 @@ Thus the KS symmetry spheres are marginal, future trapped, or past trapped (anti
 \tag{33}
 \]
 
-Equations (28)–(33) supply an invariant physical reading of the signed-curvature proof: the shell is asked to join a KS sector satisfying \(2m_{{\rm MS},C}/B\ge1\), whose spheres are trapped, anti-trapped, or marginal according to time orientation, to an ordinary untrapped exterior with smaller enclosed Schwarzschild mass length. When combined with the declared orientation and signed Israel equation, this mismatch corresponds to negative \(\sigma\). The mass ordering alone does not determine the orientation sign of \(K^\theta{}_{\theta}\), which is why Theorem 1 remains the primary proof. This is also the point of contact with BKT's general invariant formula [2]: our result is its strict KS/ordinary-exterior consequence, not an independent generalization. The complementary \(F<0\) Schwarzschild region is trapped or anti-trapped, with the classification fixed by time orientation.
+Equations (28)–(33) give the physical content of Proposition 1 in the KS specialization: the shell joins a KS sector satisfying \(2m_{{\rm MS},C}/B\ge1\), whose spheres are trapped, anti-trapped, or marginal according to time orientation, to an ordinary untrapped exterior with smaller enclosed Schwarzschild mass length. The mass ordering alone does not determine the orientation sign of \(K^\theta{}_{\theta}\); the ordinary parent orientation and the explicit retained-side construction are therefore essential to the signed conclusion. This is the point of contact with BKT's general invariant formula [2]: Proposition 1 makes the sufficient condition explicit, and Theorem 1 proves its strict KS/ordinary-exterior realization rather than claiming an independent general formalism. The complementary \(F<0\) Schwarzschild region is trapped or anti-trapped, with the classification fixed by time orientation.
 
 ### 5.2 Why homogeneity does not impose the same result in FRW
 
@@ -710,9 +748,9 @@ which is finite. The surface tensor also remains finite for finite acceleration.
 
 ## 9. Relation to prior work and limitations
 
-The affirmative KS result is geometric and region-wide. Because the Kantowski–Sachs product geometry has areal radius \(B(t_C)\) with no longitudinal spatial gradient, Eq. (31) shows that \(2m_{{\rm MS},C}/B\ge1\) identically throughout the region, with equality only where \(dB/dt_C=0\). The shell relation \(R=B\) is imposed only when evaluating a matched event. The obstruction therefore applies at every matched radius in the ordinary \(F>0\) exterior, with no critical radius or cosmological-constant scale.
+The affirmative result has two levels. Proposition 1 extracts an invariant sufficient condition: under the ordinary orientation, a timelike shell joining a sector with \((\nabla R)^2\le0\) to one with \((\nabla R)^2>0\) must carry negative surface density. Theorem 1 then supplies a geometric, region-wide realization. Because the Kantowski–Sachs product geometry has areal radius \(B(t_C)\) with no longitudinal spatial gradient, Eq. (31) shows that \(2m_{{\rm MS},C}/B\ge1\) identically throughout the region, with equality only where \(dB/dt_C=0\). The shell relation \(R=B\) is imposed only when evaluating a matched event. The obstruction therefore applies at every matched radius in the ordinary \(F>0\) exterior, with no critical radius or cosmological-constant scale.
 
-BKT [2] supply the general invariant angular-curvature formula and its surface-energy junction equation for arbitrary spherical shells; consequently neither the signed-root mechanism nor its availability for dynamical spherical interiors is claimed as new here. Rosa and Carloni [6] supply the encompassing covariant LRS framework. Two closer KS comparisons delimit the specialization. Sharif and Abbas [18] derive the surface stresses of a KS--Minkowski shell, rather than the strict sign for an ordinary Schwarzschild exterior. Uzan, Ellis, and Larena [19] obtain an exact KS construction by matching to Kottler regions on a cosmological horizon; their boundary is not the \(F>0\) timelike shell of Theorem 1. The contribution is to formulate and prove the strict sign result for this explicitly declared KS/ordinary-Schwarzschild gluing, including its retained-side, conservation, turning-point, and regular-coordinate checks. The FRW comparison identifies the product-geometric premise. The distinct Schwarzschild thin-shell-wormhole result [13] already contains the static \(3m\) NEC threshold; Proposition 2 therefore claims the KS/Nariai surface tensor and its interpretation, not novelty for that radius alone.
+BKT [2] supply the general invariant angular-curvature formula and its surface-energy junction equation for arbitrary spherical shells; consequently neither the signed-root mechanism nor its availability for dynamical spherical interiors is claimed as new here. Rosa and Carloni [6] supply the encompassing covariant LRS framework. The contribution is to state the trapped, anti-trapped, or marginal-to-untrapped implication as the explicit sufficient condition of Proposition 1 and to prove its strict, region-wide KS/ordinary-Schwarzschild realization with both retained-side gluings, conservation, turning-point, and regular-coordinate checks. Two closer KS comparisons delimit that specialization. Sharif and Abbas [18] derive the surface stresses of a KS--Minkowski shell, rather than the strict sign for an ordinary Schwarzschild exterior. Uzan, Ellis, and Larena [19] obtain an exact KS construction by matching to Kottler regions on a cosmological horizon; their boundary is not the \(F>0\) timelike shell of Theorem 1. The FRW comparison identifies the product-geometric premise that prevents homogeneity alone from implying Proposition 1's interior hypothesis. The distinct Schwarzschild thin-shell-wormhole result [13] already contains the static \(3m\) NEC threshold; Proposition 2 therefore claims the KS/Nariai surface tensor and its interpretation, not novelty for that radius alone.
 
 The \(F>0\) restriction is the invariant untrapped-Schwarzschild-side condition, not an arbitrary cutoff. For \(F<0\), the standard Schwarzschild black-hole time orientation is future trapped and the time-reversed white-hole orientation is past trapped. The strict comparison between the KS sector satisfying \(2m_{{\rm MS},C}/B\ge1\) and the untrapped Schwarzschild exterior used in Eqs. (24) and (33) therefore lifts in the complementary problem. The spacelike layers used by Frolov, Markov, and Mukhanov [8,9] pose a different junction problem inside that regime. The theorem does not obstruct their chosen architecture; it explains why the corresponding ordinary-exterior timelike alternative needs exotic support.
 
@@ -742,7 +780,7 @@ The symmetry-sphere curvature sources anisotropy, so \(\Theta>0\) does not imply
 
 ## 10. Conclusions
 
-We proved a strict surface-energy obstruction for the declared class of comoving and compatible moving timelike boundaries between a homogeneous Kantowski–Sachs region and the ordinary asymptotically flat Schwarzschild exterior. A single Gaussian normal is directed from the retained KS region to the retained Schwarzschild side. The KS product geometry gives \(2m_{{\rm MS},C}/B\ge1\) throughout the region; its spheres are trapped, anti-trapped, or marginal according to time orientation. For finite rapidity and \(F>0\), the KS angular curvature is strictly smaller in magnitude than the Schwarzschild contribution. Retaining the region containing spatial infinity fixes the Schwarzschild sign, making the angular jump positive whether the KS side retains \(\chi\le\chi_\Sigma\) or \(\chi\ge\chi_\Sigma\).
+We extracted an invariant sufficient condition for negative surface density and proved its strict KS/ordinary-Schwarzschild realization. Under the ordinary orientation, a timelike spherical shell joining a sector with \((\nabla R)^2\le0\) to one with \((\nabla R)^2>0\) has a positive angular-curvature jump and hence \(\sigma<0\). The KS product geometry satisfies the first condition identically: \(2m_{{\rm MS},C}/B\ge1\) throughout the region, and its spheres are trapped, anti-trapped, or marginal according to time orientation. The retained Schwarzschild \(F>0\) exterior supplies the second condition and fixes the positive exterior sign. The coordinate specialization confirms the strict jump whether the KS side retains \(\chi\le\chi_\Sigma\) or \(\chi\ge\chi_\Sigma\).
 
 Negative Israel surface density, \(\sigma<0\), is therefore universal under the theorem's ordinary retained exterior, \(F>0\), finite-rapidity, timelike-embedding, and common-normal hypotheses. WEC and DEC fail independently of the surface pressure. NEC violation is not universal: it requires the additional trajectory condition \(\Delta K_\tau-\Delta K_\theta<0\). Proposition 2 proves that for the exact static comoving junction family this condition holds precisely outside the Schwarzschild photon sphere, \(R_0>3m\), with saturation at \(R_0=3m\); the \(2+1\)-dimensional SEC has the same threshold within that family. Its Nariai-type geometric witness has \(\Lambda=R_0^{-2}\), a scale specific to that auxiliary realization and absent from Theorem 1. The anisotropic-source surface conservation identity closes with longitudinal pressure \(p_\chi\), the turning-point limit preserves the obstruction, and the exterior curvature agrees in Schwarzschild and ingoing Eddington–Finkelstein coordinates.
 
