@@ -514,13 +514,21 @@ Within the theorem domain, the shell NEC is therefore violated for \(R_0>3m\), s
 
 Equivalently, \(-1<w_s<-1/2\) in the NEC-violating interval, \(w_s=-1\) at the threshold, and \(w_s<-1\) below it. These ratios classify the surface tensor algebraically; because \(\sigma_0<0\), they should not be read as ordinary positive-density fluid equations of state. The second relation in Eq. (41c) shows that the second \(2+1\)-dimensional SEC inequality is satisfied throughout the family, so its SEC disposition is controlled entirely by the NEC. This proves the proposition. \(\square\)
 
-The threshold \(R_0=3m\) is the Schwarzschild photon-sphere radius, so the required surface tensor violates NEC precisely outside the photon sphere within this static junction family. Figure 2 displays the four surface-stress combinations across the family. The same algebraic boundary appears in the distinct construction of a static Schwarzschild thin-shell wormhole, for which NEC is satisfied at the throat when \(2m<a_0\le3m\) [13, Appendix A]. That construction glues two Schwarzschild exteriors with wormhole orientations; Proposition 2 instead has vanishing child curvature from a KS product region and retains one ordinary exterior. The shared threshold is therefore attributed to the static Schwarzschild curvature combination, not claimed as unique to KS.
+The threshold \(R_0=3m\) is the Schwarzschild photon-sphere radius, so the required surface tensor violates NEC precisely outside the photon sphere within this static junction family. Define the dimensionless stresses
+
+\[
+\widetilde{\sigma}_0=\frac{8\pi Gm}{c^4}\sigma_0,
+\qquad
+\widetilde{p}_{s0}=\frac{8\pi Gm}{c^4}p_{s0}.
+\]
+
+Figure 2 displays these scaled quantities and their energy-condition combinations across the family. The same algebraic boundary appears in the distinct construction of a static Schwarzschild thin-shell wormhole, for which NEC is satisfied at the throat when \(2m<a_0\le3m\) [13, Appendix A]. That construction glues two Schwarzschild exteriors with wormhole orientations; Proposition 2 instead has vanishing child curvature from a KS product region and retains one ordinary exterior. The shared threshold is therefore attributed to the static Schwarzschild curvature combination, not claimed as unique to KS.
 
 ![Surface stresses for the static comoving family](figures/figure2_static_family.pdf)
 
-**Figure 2.** Dimensionless surface stresses required by the exact static comoving junction configurations as functions of \(R_0/m\). Each plotted radius corresponds to a different Nariai scale \(\Lambda=R_0^{-2}\), not to a sequence of equilibria in one fixed bulk theory. The surface density remains negative and \(\sigma_0+2p_{s0}\) remains positive throughout \(R_0>2m\), while \(\sigma_0+p_{s0}\) changes sign at the Schwarzschild photon sphere, \(R_0=3m\). The plotting window truncates the pressure divergences as \(R_0\to2m^+\).
+**Figure 2.** Scaled surface stresses \(\widetilde{\sigma}_0\) and \(\widetilde{p}_{s0}\), defined immediately above, for the exact static comoving junction configurations. Each plotted radius corresponds to a different Nariai scale \(\Lambda=R_0^{-2}\), not to a sequence of equilibria in one fixed bulk theory. The surface density remains negative and \(\widetilde{\sigma}_0+2\widetilde{p}_{s0}\) remains positive throughout \(R_0>2m\), while \(\widetilde{\sigma}_0+\widetilde{p}_{s0}\) changes sign at the Schwarzschild photon sphere, \(R_0=3m\). The plotting window truncates the pressure divergences as \(R_0\to2m^+\).
 
-The family is not merely a pointwise kinematic assignment. An explicit isotropic bulk realization is obtained by taking \(B=R_0\) throughout a KS interval. In \(c=1\) units, the independent Einstein equations then reduce to
+The family admits an explicit local isotropic bulk realization obtained by taking \(B=R_0\) throughout a KS interval. In \(c=1\) units, the independent Einstein equations then reduce to
 
 \[
 \kappa\rho=\frac{1}{R_0^2},
@@ -705,7 +713,7 @@ The Farhi–Guth past-incompleteness argument concerns the global causal structu
 
 Finally, negative \(\sigma\) is a distributional thin-shell result. A finite-thickness transition is the natural setting in which the obstruction could change or dissolve. A resolved layer may introduce anisotropic stress, spin transport, additional fields, or a varying embedding. Smoothing alone does not guarantee success: the integrated stress and conservation laws must still follow from a declared action.
 
-The volume-versus-areal warning from the Introduction follows directly from the independent KS pressure equations [10,11]. In addition to the longitudinal equation displayed above, the angular equation is
+The volume-versus-areal warning from the Introduction follows directly from the independent GR KS pressure equations [11]. The same kinematical relations are recovered as the torsion-free limit of the Einstein--Cartan treatment in Ref. [10]; no torsion or spin term is used here. In addition to the longitudinal equation displayed above, the angular equation is
 
 \[
 \kappa p=-\left(

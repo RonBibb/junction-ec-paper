@@ -27,25 +27,25 @@ def panel(ax, y0, case, retained, eps_c, chi_points_left):
     shell_x = 0.41
     height = 0.31
     ax.add_patch(Rectangle((0.04, y0), shell_x - 0.04, height,
-                           facecolor="0.96", edgecolor="black", hatch="///", linewidth=1.0))
+                           facecolor="#e8eef5", edgecolor="black", linewidth=1.0))
     ax.add_patch(Rectangle((shell_x, y0), 0.55, height,
-                           facecolor="0.985", edgecolor="black", hatch="..", linewidth=1.0))
+                           facecolor="#f4f1e7", edgecolor="black", linewidth=1.0))
     ax.plot([shell_x, shell_x], [y0, y0 + height], color="black", linewidth=4.0)
 
     ax.text(0.225, y0 + height - 0.045, case, ha="center", va="center",
             fontsize=12, fontweight="bold")
-    ax.text(0.225, y0 + height - 0.090, retained, ha="center", va="center", fontsize=10)
+    ax.text(0.225, y0 + height - 0.090, retained, ha="center", va="center", fontsize=11)
     ax.text(0.685, y0 + height - 0.045, "retained Schwarzschild exterior",
             ha="center", va="center", fontsize=12, fontweight="bold")
     ax.text(0.685, y0 + height - 0.090, "contains spatial infinity",
-            ha="center", va="center", fontsize=10)
+            ha="center", va="center", fontsize=11)
     ax.text(shell_x + 0.012, y0 + 0.055, r"shell $\Sigma$",
             ha="left", va="center", fontsize=9.5, fontweight="bold", rotation=90)
 
     arrow(ax, (shell_x - 0.07, y0 + 0.155), (shell_x + 0.20, y0 + 0.155))
     ax.text(shell_x + 0.065, y0 + 0.188,
             r"one common $n=d\eta$, directed $M_C\to M_P$",
-            ha="center", va="center", fontsize=9.2,
+            ha="center", va="center", fontsize=10,
             bbox={"facecolor": "white", "edgecolor": "none", "pad": 1.5})
     ax.text(0.235, y0 + 0.110, rf"$\epsilon_C={eps_c:+d}$",
             ha="center", fontsize=11, fontweight="bold")
@@ -54,9 +54,9 @@ def panel(ax, y0, case, retained, eps_c, chi_points_left):
 
     chi_start, chi_end = ((0.33, 0.15) if chi_points_left else (0.15, 0.33))
     arrow(ax, (chi_start, y0 + 0.045), (chi_end, y0 + 0.045), filled=False)
-    ax.text(0.24, y0 + 0.070, r"increasing $\chi$", ha="center", fontsize=9)
+    ax.text(0.24, y0 + 0.070, r"increasing $\chi$", ha="center", fontsize=10)
     arrow(ax, (0.61, y0 + 0.045), (0.86, y0 + 0.045), filled=False)
-    ax.text(0.735, y0 + 0.070, r"increasing $R$ toward infinity", ha="center", fontsize=9)
+    ax.text(0.735, y0 + 0.070, r"increasing $R$ toward infinity", ha="center", fontsize=10)
 
 
 def main():
@@ -73,10 +73,10 @@ def main():
     ax.plot([0.04, 0.96], [0.135, 0.135], color="black", linewidth=0.8)
     ax.text(0.04, 0.095,
             "The arrows are the two one-sided limits of one normal, not normals independently directed into both retained regions.",
-            ha="left", va="center", fontsize=9.5)
+            ha="left", va="center", fontsize=10)
     ax.text(0.04, 0.055,
             "The negative parent branch retains a different Schwarzschild side; it is not a convention change for this gluing.",
-            ha="left", va="center", fontsize=9.5)
+            ha="left", va="center", fontsize=10)
 
     fig.savefig(HERE / "figure1_junction_orientation.pdf", bbox_inches="tight")
     fig.savefig(HERE / "figure1_junction_orientation.svg", bbox_inches="tight")
