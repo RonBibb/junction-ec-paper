@@ -1,0 +1,49 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.codex/
+.agents/
+
+# Credentials and local settings.
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# LaTeX and visual-inspection intermediates. Final PDFs in output/pdf remain tracked.
+tmp/
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+figures/*.aux
+figures/*.log
+
+# Author-session and review-process records remain local rather than public.
+AUTHORIZATION_LEDGER.md
+ARCHIVED_EINSTEIN_CARTAN_APPENDIX_*.md
+CITATION_INDEX_AUDIT_*.md
+FORWARD_CITATION_AUDIT_*.md
+MANUSCRIPT_EQUATION_AUDIT_*.md
+MANUSCRIPT_MATURATION_CHECKLIST_*.md
+NOVELTY_AND_SCOPE_AUDIT_*.md
+PAPER_ASSEMBLY_AND_ABSTRACT_*.md
+PUBLICATION_DECISION_*.md
+SUPPLEMENT_AND_DATA_AVAILABILITY.md
+TARGET_CONSTRUCTION_AUDIT_*.md
+WORKING_DRAFT_AUDIT_*.md
+
+# Retain only the final submission manuscript and cover-letter PDFs.
+output/pdf/*
+!output/pdf/KS_SCHWARZSCHILD_MANUSCRIPT_SUBMISSION_READY_2026-08-08.pdf
+!output/pdf/GRG_COVER_LETTER_KS_SCHWARZSCHILD_2026-08-08.pdf

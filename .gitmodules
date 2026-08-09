@@ -1,0 +1,30 @@
+[submodule "modules/junction-ec-paper-audit"]
+	path = modules/junction-ec-paper-audit
+	url = https://github.com/RonBibb/junction-ec-paper-audit.git
+[submodule "modules/Arbiter"]
+	path = modules/Arbiter
+	url = https://github.com/RonBibb/parent-child-test-specs.git
+[submodule "modules/parent-child-phase0"]
+	path = modules/parent-child-phase0
+	url = https://github.com/RonBibb/parent-child-phase0.git
+[submodule "modules/parent-child-j0"]
+	path = modules/parent-child-j0
+	url = https://github.com/RonBibb/parent-child-j0.git
+[submodule "modules/parent-child-j1"]
+	path = modules/parent-child-j1
+	url = https://github.com/RonBibb/parent-child-j1.git
+[submodule "modules/parent-child-s1"]
+	path = modules/parent-child-s1
+	url = https://github.com/RonBibb/parent-child-s1.git
+[submodule "modules/parent-child-s1-evolution"]
+	path = modules/parent-child-s1-evolution
+	url = https://github.com/RonBibb/parent-child-s1-evolution.git
+[submodule "modules/parent-child-s1-regularity"]
+	path = modules/parent-child-s1-regularity
+	url = https://github.com/RonBibb/parent-child-s1-regularity.git
+[submodule "modules/parent-child-s1-numerical"]
+	path = modules/parent-child-s1-numerical
+	url = https://github.com/RonBibb/parent-child-s1-numerical.git
+[submodule "modules/parent-child-s1-calibration"]
+	path = modules/parent-child-s1-calibration
+	url = https://github.com/RonBibb/parent-child-s1-calibration.git
