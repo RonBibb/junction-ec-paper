@@ -8,7 +8,10 @@ Main file: `KS_SCHWARZSCHILD_GRG.tex`
 Verified outputs:
 
 - `KS_SCHWARZSCHILD_GRG.pdf`: local `pdflatex` build.
-- `KS_SCHWARZSCHILD_GRG_OVERLEAF.pdf`: Overleaf build from the same package.
+
+The package has also been verified to compile on Overleaf. Re-export the
+Overleaf PDF after uploading any source correction so that the rendered copy
+contains the same archive DOI as the TeX source.
 
 Compile locally with:
 
