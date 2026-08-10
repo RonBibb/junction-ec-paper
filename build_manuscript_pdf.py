@@ -103,7 +103,7 @@ def convert(lines):
                 vector_pdf = figure_path.with_suffix(".pdf")
                 if vector_pdf.exists():
                     figure_path = vector_pdf
-                width = r"0.82\textwidth" if "figure2_static_family" in figure_path.name else r"\textwidth"
+                width = r"0.82\textwidth" if "figure2_static_family" in figure_path.name else r"0.86\textwidth"
                 body += [r"\begin{figure}[htbp]", r"\centering", rf"\includegraphics[width={width}]{{{figure_path}}}"]
                 i += 1
                 while i < len(lines) and not lines[i].strip():

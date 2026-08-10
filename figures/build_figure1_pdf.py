@@ -10,15 +10,15 @@ from matplotlib.patches import FancyArrowPatch, Rectangle
 HERE = Path(__file__).resolve().parent
 
 
-def arrow(ax, start, end, *, filled=True):
+def arrow(ax, start, end, *, filled=True, linewidth=1.6, color="black", scale=16):
     ax.add_patch(
         FancyArrowPatch(
             start,
             end,
             arrowstyle="-|>" if filled else "->",
-            mutation_scale=16,
-            linewidth=1.6,
-            color="black",
+            mutation_scale=scale,
+            linewidth=linewidth,
+            color=color,
         )
     )
 
@@ -42,7 +42,8 @@ def panel(ax, y0, case, retained, eps_c, chi_points_left):
     ax.text(shell_x + 0.012, y0 + 0.055, r"shell $\Sigma$",
             ha="left", va="center", fontsize=9.5, fontweight="bold", rotation=90)
 
-    arrow(ax, (shell_x - 0.07, y0 + 0.155), (shell_x + 0.20, y0 + 0.155))
+    arrow(ax, (shell_x - 0.07, y0 + 0.155), (shell_x + 0.20, y0 + 0.155),
+          linewidth=2.8, color="#8b1a1a", scale=20)
     ax.text(shell_x + 0.065, y0 + 0.188,
             r"one common $n=d\eta$, directed $M_C\to M_P$",
             ha="center", va="center", fontsize=10,
@@ -54,13 +55,13 @@ def panel(ax, y0, case, retained, eps_c, chi_points_left):
 
     chi_start, chi_end = ((0.33, 0.15) if chi_points_left else (0.15, 0.33))
     arrow(ax, (chi_start, y0 + 0.045), (chi_end, y0 + 0.045), filled=False)
-    ax.text(0.24, y0 + 0.070, r"increasing $\chi$", ha="center", fontsize=10)
+    ax.text(0.24, y0 + 0.070, r"$+\chi$ coordinate direction", ha="center", fontsize=10)
     arrow(ax, (0.61, y0 + 0.045), (0.86, y0 + 0.045), filled=False)
     ax.text(0.735, y0 + 0.070, r"increasing $R$ toward infinity", ha="center", fontsize=10)
 
 
 def main():
-    fig, ax = plt.subplots(figsize=(12, 6.8))
+    fig, ax = plt.subplots(figsize=(10.5, 5.5))
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")

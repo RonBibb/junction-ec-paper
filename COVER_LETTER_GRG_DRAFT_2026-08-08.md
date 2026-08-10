@@ -8,7 +8,7 @@ Please consider my manuscript, “Surface-Energy Sign Classification for Timelik
 
 The contribution is the combined causal-sector classification, exact positive-density interval, and explicit regular-chart witness construction, rather than the underlying general BKT junction formula. The Schwarzschild horizon is the invariant boundary between the classified open sectors, while sign indeterminacy begins strictly at \(F<0\). The interior result is local and does not claim a global gluing, dynamics, or validation of generally spacelike transition layers. This combination of exact junction analysis, branch control, and energy-condition analysis is well aligned with the scope of *General Relativity and Gravitation*.
 
-The manuscript is original, is not under consideration elsewhere, and has been prepared independently without institutional or grant support. The manuscript source, figure-generation scripts, and verification suite are publicly available at https://github.com/RonBibb/junction-ec-paper.
+The manuscript is original, is not under consideration elsewhere, and has been prepared independently without institutional or grant support. The archived manuscript source, figure-generation scripts, and verification suite are available at https://doi.org/10.5281/zenodo.21872426; development history remains public at https://github.com/RonBibb/junction-ec-paper.
 
 Subject to the journal’s conflict-of-interest checks, potential referees with relevant expertise include João L. Rosa, Sebastian Carloni, S. H. Mazharimousavi, José M. M. Senovilla, and S. Khakshournia.
 
