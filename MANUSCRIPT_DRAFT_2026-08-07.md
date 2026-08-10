@@ -1,4 +1,4 @@
-# Surface-Energy Sign Classification for Timelike Kantowski–Sachs–Schwarzschild Junctions
+# Surface-Energy Sign Classification for Timelike Kantowski–Sachs–Schwarzschild Junctions on the Ordinary Branch
 
 **Ron Bibb**  
 Independent Researcher, Lilburn, Georgia, USA  
@@ -9,7 +9,7 @@ ORCID: 0009-0004-1153-2464
 
 ## Abstract
 
-We classify the sign of the Israel surface density for timelike spherical junctions between homogeneous Kantowski–Sachs (KS) and Schwarzschild regions. An invariant sufficient condition first shows that, under the ordinary orientation, joining a sector with \((\nabla R)^2\le0\) to one with \((\nabla R)^2>0\) requires \(\sigma<0\). KS geometry satisfies the first condition throughout the region because its areal radius has no longitudinal spatial gradient. Hence every compatible finite-rapidity junction to the retained Schwarzschild \(F(R)>0\) exterior has \(\sigma<0\) for either retained KS interval, so the weak and dominant energy conditions fail independently of surface pressure. Inside the horizon, \(F<0\), both sides instead have nonpositive areal-radius gradient norm and the sign is not fixed. We derive the exact positive-density interval and exhibit future-infalling timelike data, verified in ingoing Eddington–Finkelstein coordinates, for which the same bulk event and retained-side gluing admit either sign as the longitudinal shell motion is reversed. An exact compatible choice of acceleration data further gives \(p_s=\sigma/2\), so NEC, WEC, DEC, and the \(2+1\)-dimensional SEC are all strictly satisfied. The result is a causal-sector classification, not a dynamical construction or a statement about spacelike, finite-thickness, or wormhole-connected transitions.
+We classify the sign of the Israel surface density for timelike spherical junctions between homogeneous Kantowski–Sachs (KS) and the ordinary Schwarzschild branch. An invariant sufficient condition first shows that, under the ordinary orientation, joining a sector with \((\nabla R)^2\le0\) to one with \((\nabla R)^2>0\) requires \(\sigma<0\). KS geometry satisfies the first condition throughout the region because its areal radius has no longitudinal spatial gradient. Hence every compatible finite-rapidity junction to the retained Schwarzschild \(F(R)>0\) exterior has \(\sigma<0\) for either retained KS interval, so the weak and dominant energy conditions fail independently of surface pressure. The same ordering persists at \(F=0\) for a finite-rapidity timelike crossing; sign indeterminacy begins strictly at \(F<0\). There, retaining the increasing-\(R\) Schwarzschild side, we derive the exact positive-density interval and exhibit two distinct future-infalling local shell embeddings through the same bulk event, verified in ingoing Eddington–Finkelstein coordinates, with opposite density signs. An exact compatible choice of acceleration data further gives \(p_s=\sigma/2\), so NEC, WEC, DEC, and the \(2+1\)-dimensional SEC are all strictly satisfied. The contribution is this combined causal-sector classification, exact interior interval, and regular-chart witness construction, rather than a new general junction formula or a dynamical transition model.
 
 ## 1. Introduction
 
@@ -25,7 +25,7 @@ We first extract from BKT's invariant formula [2, p. 2925, Eq. (2.54a)] a suffic
 
 The principal result is the resulting causal-sector classification: a universal negative-density theorem for the retained \(F>0\) side and an exact sign criterion with both signs realized for \(F<0\). The derivation fixes the Schwarzschild orientation from the retained global region, obtains both independent mixed curvature components, closes the Israel and Codazzi relations, contrasts the KS product structure with FRW geometry, treats turning points without division by \(\dot R\), and verifies the interior witnesses in ingoing Eddington–Finkelstein coordinates.
 
-Theorem 1 applies to the comoving interface and every compatible finite-rapidity shell embedding satisfying the proper-time and areal-matching relations while \(R>0\) and \(F>0\). Proposition 2 treats local future-infalling timelike segments with \(F<0\). Neither result covers spacelike transitions, alternative global gluings, finite-thickness layers, independent surface-spin sectors, or shell dynamics and stability.
+Theorem 1 applies to the comoving interface and every compatible finite-rapidity shell embedding satisfying the proper-time and areal-matching relations while \(R>0\) and \(F>0\). Proposition 2 treats local future-infalling timelike segments with \(F<0\); it is not a global interior construction. Neither result covers spacelike transitions, alternative global gluings, finite-thickness layers, independent surface-spin sectors, or shell dynamics and stability.
 
 One interpretive warning will matter later: Kantowski–Sachs total-volume expansion, governed by \(\Theta=H_A+2H_B\), does not imply expansion of the symmetry spheres, which requires \(H_B>0\). Section 9 gives the corresponding shear identity and explains why this distinction prevents the junction calculation from being read as evidence for an areal bounce.
 
@@ -38,7 +38,7 @@ ds_C^2=-N^2dt_C^2+A^2(t_C)d\chi^2+B^2(t_C)d\Omega_2^2.
 \tag{1}
 \]
 
-After deriving the normalization condition we choose child proper time \(N=1\), with
+We use ``KS side'' and ``Schwarzschild side'' for the two geometries. The occasional shorthand ``child'' and ``parent'' refers only to their intended placement in the motivating construction and carries no additional dynamical assumption. After deriving the normalization condition we choose KS-side proper time \(N=1\), with
 
 \[
 H_A=\frac{1}{A}\frac{dA}{dt_C},
@@ -450,7 +450,14 @@ and the positive radial term can make the symmetry spheres untrapped. The KS ste
 
 ### 5.3 Complementary interior sector: both density signs occur
 
-The horizon separates two invariant sign regimes.
+For a finite-rapidity timelike crossing of \(F=0\), the regular-chart relation requires \(\dot R\ne0\), and Eq. (25) survives as
+
+\[
+\left|K^\theta{}_{\theta,C}\right|<\frac{|\dot R|}{R}
+=K^\theta{}_{\theta,P}.
+\]
+
+Thus \(\sigma<0\) still holds on the horizon itself. The horizon is the invariant boundary of the two classified open sectors, but sign indeterminacy begins strictly in \(F<0\).
 
 **Lemma 2 (interior retained-side orientation).** Let a future-infalling timelike shell segment lie in Schwarzschild Kruskal region II, with \(F=-f<0\). Retain on the Schwarzschild side the connected increasing-\(R\) side whose closure meets the future horizon and continues into asymptotically flat region I. Direct the common normal from KS into that retained Schwarzschild side. Then \(\epsilon_P=+1\) and \(K^\theta{}_{\theta,P}=\beta/R>0\).
 
@@ -489,7 +496,7 @@ f<\dot R^2<(1+X^2)f,
 
 Equality at the upper endpoint gives \(\sigma=0\). Outside this aligned interval, the surface density is negative. In invariant terms, when both angular curvatures are positively aligned, \(\sigma>0\) occurs when \((\nabla R)^2_C>(\nabla R)^2_P=F\); unlike Proposition 1, neither side is untrapped and no universal magnitude ordering remains.
 
-**Proposition 2 (interior sign indeterminacy).** For a future-infalling timelike KS/Schwarzschild junction segment with \(F<0\), the retained Schwarzschild side extending toward increasing \(R\), and either explicitly fixed KS retained interval, the Israel surface density is not sign-definite. The aligned interval above is nonempty for every \(X\ne0\), and compatible local data exist with \(\sigma>0\). For the same local bulk geometry and retained-side signs, reversing the longitudinal KS shell motion can instead give \(\sigma<0\).
+**Proposition 2 (interior sign indeterminacy).** For a future-infalling timelike KS/Schwarzschild junction segment with \(F<0\), \(\epsilon_P=+1\), the retained Schwarzschild side extending toward increasing \(R\), and either explicitly fixed KS retained interval, the Israel surface density is not sign-definite. The aligned interval above is nonempty for every \(X\ne0\), and compatible local data exist with \(\sigma>0\). Two distinct local shell embeddings through the same bulk event, with the same retained-side signs but opposite longitudinal KS motion, can realize opposite density signs. They are not two states along one fixed shell trajectory.
 
 **Proof by explicit paired witness.** Work in units where the matched radius is \(R=1\), and choose
 
@@ -555,7 +562,7 @@ K^\theta{}_{\theta,C}=-\frac{3\sqrt{10}}5,
 \sigma<0.
 \]
 
-Thus both signs occur within the same local causal sector and retained-side gluing. \(\square\)
+Thus both signs occur within the same local causal sector and retained-side gluing, on two distinct compatible local embeddings through the event. \(\square\)
 
 The pair is not generated by a retained-region-preserving KS isometry. The reflection \(\chi-\chi_\Sigma\mapsto-(\chi-\chi_\Sigma)\) sends \(X\mapsto-X\) but also swaps \(\chi\le\chi_\Sigma\) with \(\chi\ge\chi_\Sigma\), and hence sends \(\epsilon_C\mapsto-\epsilon_C\). The product \(\epsilon_CX\), and therefore \(K^\theta{}_{\theta,C}\), is unchanged under the full reflected gluing. Proposition 2 instead holds \(\epsilon_C=-1\) and the retained interval fixed while reversing \(X\), so its two witnesses are not related by that isometry.
 
@@ -721,11 +728,11 @@ The threshold \(R_0=3m\) is the Schwarzschild photon-sphere radius, so the requi
 \widetilde{p}_{s0}=\frac{8\pi Gm}{c^4}p_{s0}.
 \]
 
-Figure 2 displays these scaled quantities and their energy-condition combinations across the family. The same algebraic boundary appears in the distinct construction of a static Schwarzschild thin-shell wormhole, for which NEC is satisfied at the throat when \(2m<a_0\le3m\) [13, Appendix A]. That construction glues two Schwarzschild exteriors with wormhole orientations; Proposition 3 instead has vanishing child curvature from a KS product region and retains one ordinary exterior. The shared threshold is therefore attributed to the static Schwarzschild curvature combination, not claimed as unique to KS.
+Figure 2 displays these scaled quantities and the intrinsic NEC combination across the family. The same algebraic boundary appears in the distinct construction of a static Schwarzschild thin-shell wormhole, for which NEC is satisfied at the throat when \(2m<a_0\le3m\) [13, Appendix A]. That construction glues two Schwarzschild exteriors with wormhole orientations; Proposition 3 instead has vanishing KS-side curvature from a product region and retains one ordinary exterior. The shared threshold is therefore attributed to the static Schwarzschild curvature combination, not claimed as unique to KS.
 
 ![Surface stresses for the static comoving family](figures/figure2_static_family.pdf)
 
-**Figure 2.** Scaled surface stresses \(\widetilde{\sigma}_0\) and \(\widetilde{p}_{s0}\), defined immediately above, for the exact static comoving junction configurations. Each plotted radius corresponds to a different Nariai scale \(\Lambda=R_0^{-2}\), not to a sequence of equilibria in one fixed bulk theory. The surface density remains negative and \(\widetilde{\sigma}_0+2\widetilde{p}_{s0}\) remains positive throughout \(R_0>2m\), while \(\widetilde{\sigma}_0+\widetilde{p}_{s0}\) changes sign at the Schwarzschild photon sphere, \(R_0=3m\). The plotting window truncates the pressure divergences as \(R_0\to2m^+\).
+**Figure 2.** Scaled surface stresses \(\widetilde{\sigma}_0\) and \(\widetilde{p}_{s0}\), defined immediately above, for the exact static comoving junction configurations. Each plotted radius corresponds to a different Nariai scale \(\Lambda=R_0^{-2}\), not to a sequence of equilibria in one fixed bulk theory. The surface density remains negative, while the intrinsic NEC combination \(\widetilde{\sigma}_0+\widetilde{p}_{s0}\) changes sign at the Schwarzschild photon sphere, \(R_0=3m\). The intrinsic \(2+1\)-dimensional SEC additionally requires \(\widetilde p_{s0}\ge0\), which holds throughout this family. The plotting window truncates the pressure divergences as \(R_0\to2m^+\).
 
 The family admits an explicit local isotropic bulk realization obtained by taking \(B=R_0\) throughout a KS interval. In \(c=1\) units, the independent Einstein equations then reduce to
 
@@ -907,7 +914,7 @@ The affirmative result has two levels. Proposition 1 extracts an invariant suffi
 
 BKT [2] supply the general invariant angular-curvature formula and its surface-energy junction equation for arbitrary spherical shells; consequently neither the signed-root mechanism nor its availability for dynamical spherical interiors is claimed as new here. Rosa and Carloni [6] supply the encompassing covariant LRS framework. The contribution is to state the trapped, anti-trapped, or marginal-to-untrapped implication as the explicit sufficient condition of Proposition 1; prove its strict, region-wide KS/ordinary-Schwarzschild realization; and identify the complementary \(F<0\) sector in which the sign becomes indefinite, with both signs realized by regular future-infalling witnesses on one retained-side gluing. Two closer KS comparisons delimit the specialization. Sharif and Abbas [18] derive the surface stresses of a KS--Minkowski shell, rather than this Schwarzschild causal-sector classification. Uzan, Ellis, and Larena [19] obtain an exact KS construction by matching to Kottler regions on a cosmological horizon; their boundary is not either timelike sector classified here. The FRW comparison identifies the product-geometric premise that prevents homogeneity alone from implying Proposition 1's interior hypothesis. The distinct Schwarzschild thin-shell-wormhole result [13] already contains the static \(3m\) NEC threshold; Proposition 3 therefore claims the KS/Nariai surface tensor and its interpretation, not novelty for that radius alone.
 
-The \(F=0\) horizon is the invariant boundary between the two sign regimes, not an arbitrary cutoff. For \(F>0\), the Schwarzschild side is untrapped and Theorem 1 fixes \(\sigma<0\). For \(F<0\), the standard Schwarzschild black-hole time orientation is future trapped and the time-reversed white-hole orientation is past trapped; both sides then have nonpositive areal-radius gradient norm. Proposition 2 shows that the angular ordering is no longer universal and supplies both density signs, while Corollary 2 gives compatible local surface data satisfying all standard shell energy conditions. The spacelike layers used by Frolov, Markov, and Mukhanov [8,9] and Brandenberger, Heisenberg, and Robnik [17] still pose different junction problems. The present calculation neither proves nor obstructs their dynamics; it explains geometrically why interior constructions lie outside the universal exterior sign obstruction.
+The \(F=0\) horizon is the invariant boundary between the classified open sectors, not an arbitrary cutoff. The finite-rapidity timelike-crossing limit retains the strict negative-density ordering at \(F=0\); sign indeterminacy starts only at \(F<0\). There, Proposition 2 holds locally for \(\epsilon_P=+1\) and the increasing-\(R\) retained Schwarzschild side, and supplies two distinct embeddings with opposite density signs. Corollary 2 gives compatible local surface data satisfying all standard shell energy conditions. This does not establish a global interior gluing or the dynamics of the spacelike layers used in Refs. [8,9,17].
 
 Proposition 1 is also distinct from the standard thin-shell-wormhole flare-out argument. A wormhole throat is a minimum of areal radius and uses outward normals on two back-to-back exterior copies, which fixes the angular-curvature signs through that global gluing. Here one common normal crosses two different regions, and the sufficient condition compares the causal character of their areal-radius gradients. Proposition 2 further shows that when both gradients are nonspacelike, reversing the longitudinal KS shell motion can reverse the density sign without changing the retained regions. The mechanisms are therefore related through the Israel angular equation but not identical.
 
@@ -939,7 +946,7 @@ The symmetry-sphere curvature sources anisotropy, so \(\Theta>0\) does not imply
 
 We obtained a surface-energy sign classification across the two Schwarzschild causal sectors. Under the ordinary orientation, a timelike spherical shell joining a sector with \((\nabla R)^2\le0\) to one with \((\nabla R)^2>0\) has a positive angular-curvature jump and hence \(\sigma<0\). The KS product geometry satisfies the first condition identically: \(2m_{{\rm MS},C}/B\ge1\) throughout the region. The retained Schwarzschild \(F>0\) side supplies the second condition, so Theorem 1 fixes the negative sign for either KS retained interval.
 
-The complementary \(F<0\) sector has no universal sign. A timelike shell requires \(\dot R^2>|F|\), and positive density occurs for an aligned KS angular curvature precisely when \(|F|<\dot R^2<(1+X^2)|F|\). Proposition 2 supplies a future-infalling EF-regular witness with \(\sigma>0\) and, at the same bulk event and with the same retained regions, a reversed-longitudinal-motion witness with \(\sigma<0\). The positive witness reverses the exterior Misner–Sharp ordering, \(m_{{\rm MS},C}<m_{{\rm MS},P}\). Corollary 2 further supplies compatible acceleration data with \(p_s=\sigma/2\), so NEC, WEC, DEC, and the intrinsic shell SEC all hold strictly. Thus the horizon separates a universal negative-density exterior regime from an interior regime admitting fully energy-condition-satisfying local surface data. This is a local geometric classification, not a dynamical or global transition construction.
+The finite-rapidity timelike-crossing limit remains negative-density at \(F=0\). In the complementary \(F<0\) sector, with \(\epsilon_P=+1\) and the increasing-\(R\) Schwarzschild side retained, no universal sign remains: positive density occurs for aligned KS angular curvature precisely when \(|F|<\dot R^2<(1+X^2)|F|\). Proposition 2 supplies two distinct future-infalling EF-regular local embeddings through the same bulk event, one with \(\sigma>0\) and the other with \(\sigma<0\). The positive witness reverses the exterior Misner–Sharp ordering, \(m_{{\rm MS},C}<m_{{\rm MS},P}\), and Corollary 2 supplies compatible acceleration data with \(p_s=\sigma/2\), so all intrinsic shell energy conditions hold strictly. This is a local geometric classification, not a dynamical or global transition construction.
 
 Within the \(F>0\) theorem domain, WEC and DEC fail independently of surface pressure. NEC violation is not universal: it requires the additional trajectory condition \(\Delta K_\tau-\Delta K_\theta<0\). Proposition 3 proves that for the exact static comoving junction family this condition holds precisely outside the Schwarzschild photon sphere, \(R_0>3m\), with saturation at \(R_0=3m\); the \(2+1\)-dimensional SEC has the same threshold within that family. Its Nariai-type geometric witness has \(\Lambda=R_0^{-2}\), a scale specific to that auxiliary realization and absent from Theorem 1. The anisotropic-source surface conservation identity closes with longitudinal pressure \(p_\chi\), the turning-point limit preserves the exterior obstruction, and the curvature and orientation checks agree in Schwarzschild and ingoing Eddington–Finkelstein coordinates.
 

@@ -16,15 +16,11 @@ def main():
     sigma = -2 * root / x
     pressure = (x - 1) / (x * x * root)
     nec = (3 - x) / (x * x * root)
-    sec_second = 2 / (x * x * root)
-
-    fig, ax = plt.subplots(figsize=(12.5, 7.2))
+    fig, ax = plt.subplots(figsize=(10.5, 5.4))
     ax.plot(x, sigma, color="#1f4f7a", lw=2.4, label=r"$\widetilde{\sigma}_0$")
     ax.plot(x, pressure, color="#a64a29", lw=2.4, ls="--", label=r"$\widetilde{p}_{s0}$")
     ax.plot(x, nec, color="#2e7d32", lw=2.7,
             label=r"$\widetilde{\sigma}_0+\widetilde{p}_{s0}$")
-    ax.plot(x, sec_second, color="#6b4c99", lw=2.4, ls=":",
-            label=r"$\widetilde{\sigma}_0+2\widetilde{p}_{s0}$")
     ax.axhline(0, color="black", lw=1.0)
     ax.axvline(3, color="0.35", lw=1.2, ls="--")
     ax.text(3.08, 1.80, r"photon sphere  $R_0=3m$", rotation=90,
@@ -40,7 +36,7 @@ def main():
     ax.set_xlabel(r"Matched radius  $R_0/m$", fontsize=14)
     ax.set_ylabel("Scaled surface stress", fontsize=14)
     ax.grid(True, color="0.85", lw=0.7)
-    ax.legend(loc="upper right", ncol=2, framealpha=0.95, fontsize=12)
+    ax.legend(loc="upper right", framealpha=0.95, fontsize=12)
     ax.tick_params(labelsize=12)
     fig.tight_layout()
     fig.savefig(OUT, bbox_inches="tight")
