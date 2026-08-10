@@ -28,6 +28,7 @@ tmp/
 *.fdb_latexmk
 figures/*.aux
 figures/*.log
+submission/grg/build/
 
 # Author-session and review-process records remain local rather than public.
 AUTHORIZATION_LEDGER.md
