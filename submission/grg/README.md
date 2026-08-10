@@ -5,6 +5,11 @@ This directory uses the official Springer Nature journal class, version 3.1
 
 Main file: `KS_SCHWARZSCHILD_GRG.tex`
 
+Verified outputs:
+
+- `KS_SCHWARZSCHILD_GRG.pdf`: local `pdflatex` build.
+- `KS_SCHWARZSCHILD_GRG_OVERLEAF.pdf`: Overleaf build from the same package.
+
 Compile locally with:
 
 ```sh
