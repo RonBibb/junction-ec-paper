@@ -9,7 +9,7 @@ ORCID: 0009-0004-1153-2464
 
 ## Abstract
 
-We give a two-sector surface-energy classification for timelike spherical junctions between homogeneous Kantowski–Sachs (KS) geometry and the ordinary Schwarzschild branch. Every compatible finite-rapidity junction to the retained \(F(R)>0\) exterior has negative Israel surface density, and this ordering persists at \(F=0\); sign indeterminacy begins strictly at \(F<0\). In the interior sector, retaining the increasing-\(R\) Schwarzschild side, we derive the exact positive-density interval and exhibit two distinct future-infalling local shell embeddings through the same bulk event, verified in ingoing Eddington–Finkelstein coordinates, with opposite density signs. Compatible acceleration data give \(p_s=\sigma/2\), so NEC, WEC, DEC, and the intrinsic \(2+1\)-dimensional SEC are all strictly satisfied. An invariant sufficient condition explains the exterior result: under the ordinary orientation, joining \((\nabla R)^2\le0\) to \((\nabla R)^2>0\) requires \(\sigma<0\), and KS geometry satisfies the first condition region-wide because its areal radius has no longitudinal spatial gradient. For an exact static comoving family, NEC fails precisely outside the Schwarzschild photon sphere, \(R_0=3m\). The combined causal-sector classification, exact interior interval, and regular-chart witnesses are the principal results.
+We give a two-sector surface-energy classification for timelike spherical junctions between homogeneous Kantowski–Sachs (KS) geometry and the ordinary Schwarzschild branch. Every compatible finite-rapidity junction to the retained \(F(R)>0\) exterior has negative Israel surface density, so WEC and DEC fail independently of surface pressure; this ordering persists at \(F=0\), and sign indeterminacy begins strictly at \(F<0\). In the interior sector, retaining the increasing-\(R\) Schwarzschild side, we derive the exact positive-density interval and exhibit two distinct future-infalling local shell embeddings through the same bulk event, verified in ingoing Eddington–Finkelstein coordinates, with opposite density signs. For the positive-density witness, compatible acceleration data give \(p_s=\sigma/2\), so NEC, WEC, DEC, and the intrinsic \(2+1\)-dimensional SEC are all strictly satisfied. An invariant sufficient condition explains the exterior result: under the ordinary orientation, joining \((\nabla R)^2\le0\) to \((\nabla R)^2>0\) requires \(\sigma<0\), and KS geometry satisfies the first condition region-wide because its areal radius has no longitudinal spatial gradient. For an exact static comoving family, NEC fails precisely outside the Schwarzschild photon sphere, \(R_0=3m\). The combined causal-sector classification, exact interior interval, and regular-chart witnesses are the principal results.
 
 ## 1. Introduction
 
@@ -128,7 +128,7 @@ Figure 1 summarizes the declared geometry, retained regions, and normal orientat
 
 ![Junction geometry and normal orientations](figures/figure1_junction_orientation.svg)
 
-**Figure 1.** Declared spherical timelike junction with the single Gaussian normal \(n=d\eta\) directed from \(M_C\) to \(M_P\). The retained Schwarzschild region contains spatial infinity, so the Schwarzschild-side limit of the common normal points toward increasing areal radius and \(\epsilon_P=+1\). On the KS side, retaining \(\chi\le\chi_\Sigma\) gives \(\epsilon_C=+1\), while retaining \(\chi\ge\chi_\Sigma\) gives \(\epsilon_C=-1\); in both cases the common normal points out of the retained KS region toward the Schwarzschild side. The \(\epsilon_P=-1\) algebraic branch retains a different Schwarzschild side and is not a sign alternative for this gluing.
+**Figure 1.** Declared spherical timelike junction with the single Gaussian normal \(n=d\eta\) directed from \(M_C\) to \(M_P\). The retained Schwarzschild region contains spatial infinity, so the Schwarzschild-side limit of the common normal points toward increasing areal radius and \(\epsilon_P=+1\). On the KS side, retaining \(\chi\le\chi_\Sigma\) gives \(\epsilon_C=+1\), while retaining \(\chi\ge\chi_\Sigma\) gives \(\epsilon_C=-1\); in both cases the common normal points out of the retained KS region toward the Schwarzschild side. In both panels the retained KS region is drawn to the left of the shell, so the \(+\chi\) direction points page-right in Case A and page-left in Case B. The \(\epsilon_P=-1\) algebraic branch retains a different Schwarzschild side and is not a sign alternative for this gluing.
 
 ## 3. Common-normal and retained-side lemma
 
@@ -196,7 +196,7 @@ The acceleration form of \(K^\tau{}_{\tau,P}\) supplies its regular turning-poin
 
 ### 4.2 Moving Kantowski–Sachs side
 
-Child-side normalization is
+KS-side normalization is
 
 \[
 \dot t_C^2-A^2\dot\chi^2=1.
@@ -968,6 +968,12 @@ The result is a causal-sector classification for timelike thin shells: it identi
 This research was conducted independently, without institutional or grant support. R.B. thanks Hazel for her tireless support and patience throughout this research—and for saying yes on June 20th, in the middle of all of it.
 
 Software used in this work includes Python, SymPy, SciPy, ReportLab, PGFPlots, and XeLaTeX.
+
+## Declarations
+
+**Funding:** None.
+
+**Competing interests:** The author declares no competing interests.
 
 ## Data and code availability
 

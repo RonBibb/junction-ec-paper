@@ -103,7 +103,12 @@ def convert(lines):
                 vector_pdf = figure_path.with_suffix(".pdf")
                 if vector_pdf.exists():
                     figure_path = vector_pdf
-                width = r"0.82\textwidth" if "figure2_static_family" in figure_path.name else r"0.86\textwidth"
+                if "figure2_static_family" in figure_path.name:
+                    width = r"0.82\textwidth"
+                elif "figure1_junction_orientation" in figure_path.name:
+                    width = r"0.72\textwidth"
+                else:
+                    width = r"\textwidth"
                 body += [r"\begin{figure}[htbp]", r"\centering", rf"\includegraphics[width={width}]{{{figure_path}}}"]
                 i += 1
                 while i < len(lines) and not lines[i].strip():
@@ -160,7 +165,7 @@ def convert(lines):
                     body.append(r"\appendix")
                     appendix_started = True
                 body.append(r"\section{" + text_escape(appendix_match.group(1)) + "}")
-            elif line in ("## Acknowledgments", "## Data and code availability"):
+            elif line in ("## Acknowledgments", "## Declarations", "## Data and code availability"):
                 body.append(r"\section*{" + text_escape(line[3:]) + "}")
             else:
                 body.append(r"\section{" + text_escape(re.sub(r"^\d+\.\s*", "", line[3:])) + "}")
