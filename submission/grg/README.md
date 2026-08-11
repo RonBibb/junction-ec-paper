@@ -8,11 +8,12 @@ Main file: `KS_SCHWARZSCHILD_GRG.tex`
 Verified outputs:
 
 - `KS_SCHWARZSCHILD_GRG.pdf`: local `pdflatex` build.
+- `KS_SCHWARZSCHILD_GRG_OVERLEAF.pdf`: verified Overleaf build.
 - `GRG_COVER_LETTER_KS_SCHWARZSCHILD_2026-08-11.pdf`: separately uploaded cover letter.
 
-The package has also been verified to compile on Overleaf. Re-export the
-Overleaf PDF after uploading any source correction so that the rendered copy
-contains the same archive DOI as the TeX source.
+The package has been verified to compile on Overleaf. Re-export and re-check the
+Overleaf PDF after any future source correction so that the rendered copy remains
+synchronized with the TeX source.
 
 Compile locally with:
 
