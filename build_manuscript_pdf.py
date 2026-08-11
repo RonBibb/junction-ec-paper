@@ -83,7 +83,7 @@ def convert(lines):
             title = line[2:].strip()
             i += 1
             continue
-        if (line.startswith("**Ron Bibb**") or line.startswith("Independent Researcher")
+        if (line.startswith("**Ronald Bibb**") or line.startswith("Independent Researcher")
                 or line.startswith("Email:") or line.startswith("ORCID:")):
             author_lines.append(re.sub(r"\*\*", "", line).strip())
             i += 1
@@ -198,7 +198,7 @@ def convert(lines):
         body.append(text_escape(" ".join(para)) + "\n")
     if in_refs:
         body += [r"\end{enumerate}", r"\normalsize"]
-    author = author_lines[0] if author_lines else "Ron Bibb"
+    author = author_lines[0] if author_lines else "Ronald Bibb"
     author_details = r"\\\small ".join(text_escape(line) for line in author_lines[1:])
     preamble = rf"""\documentclass[11pt]{{article}}
 \usepackage[margin=1in]{{geometry}}

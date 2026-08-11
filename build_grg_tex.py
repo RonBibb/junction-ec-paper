@@ -87,7 +87,7 @@ def main() -> int:
 
 \title[KS--Schwarzschild surface-energy classification]{{{title}}}
 
-\author*[1]{{\fnm{{Ron}} \sur{{Bibb}}}}\email{{ronbibb@gmail.com}}
+\author*[1]{{\fnm{{Ronald}} \sur{{Bibb}}}}\email{{ronbibb@gmail.com}}
 \affil*[1]{{\orgname{{Independent Researcher}},
   \orgaddress{{\city{{Lilburn}}, \state{{Georgia}}, \country{{USA}}}}}}
 

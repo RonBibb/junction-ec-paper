@@ -1,6 +1,6 @@
 # Surface-Energy Sign Classification for Timelike Kantowski–Sachs–Schwarzschild Junctions on the Ordinary Branch
 
-**Ron Bibb**  
+**Ronald Bibb**  
 Independent Researcher, Lilburn, Georgia, USA  
 Email: ronbibb@gmail.com  
 ORCID: 0009-0004-1153-2464
